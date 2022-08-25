@@ -1,3 +1,23 @@
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4em;
+    color: #ff0000;
+}
+.imagen{
+    border: 5px black outset; 
+    border-radius: 5px;
+}
+.perfil{
+    border: 5px black double;
+    font-size: 1em;
+}
+body{
+    background-color:rgb(209, 193, 193) 
+}
+p{
+    font-size: 1em;
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
 }
