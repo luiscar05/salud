@@ -1,11 +1,18 @@
 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 4em;
     color: #ff0000;
 }
 .imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 5px black outset; 
     border-radius: 5px;
+    
 }
 .perfil{
     border: 5px black double;
@@ -15,9 +22,12 @@ body{
     background-color:rgb(209, 193, 193) 
 }
 p{
-    font-size: 1em;
+    font-size: 1.5em;
 }
 h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Oswald', sans-serif;
-    font-size: 2em;
+    font-size: 3em;
 }
