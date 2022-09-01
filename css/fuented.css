@@ -8,22 +8,17 @@ body {
     
 }
 h1{
-    font-size: 13em;
-    font-family: 'allura';
+    font-size: 9em;
+    font-family: 'Waltograph',sans-serif;
     font-weight: 900;
     color: aliceblue;
 
 }
 /* allura-regular - latin */
 @font-face {
-    font-family: 'Allura';
+    font-family: 'Waltograph';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/allura-v18-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('../fonts/allura-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/allura-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/allura-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/allura-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/allura-v18-latin-regular.svg#Allura') format('svg'); /* Legacy iOS */
+    src: url('../fonts/waltographUI.ttf')
+   
   }
