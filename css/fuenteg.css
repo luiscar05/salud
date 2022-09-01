@@ -1,14 +1,16 @@
 body{
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-weight: 900;
+    font-weight: 600;
 }
 h1{
     font-size: 6em;
     font-family: 'Cinzel',sans-serif;
-    font-weight: 900;
+    font-weight: 600;
+    color: aliceblue;
 }
 /* cinzel-700 - latin */
 @font-face {
