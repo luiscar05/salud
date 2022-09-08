@@ -1,0 +1,22 @@
+.textOone{
+    /* */
+    
+    text-align: left;
+    color: black;
+    font-size: 2em;
+}
+.textTwo{
+    text-align: right;
+    color: black;
+    font-size: 2em;
+}
+.textThree{
+    text-align: center;
+    color: black;
+    font-size: 2em;
+}
+.textFour{
+    text-align: justify;
+    color: black;
+    font-size: 2em;
+}
