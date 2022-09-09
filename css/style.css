@@ -23,6 +23,7 @@ body{
 }
 p{
     font-size: 1.5em;
+    text-align: justify;
 }
 h2{
     display: flex;
@@ -30,4 +31,43 @@ h2{
     align-items: center;
     font-family: 'Oswald', sans-serif;
     font-size: 3em;
+}
+.text1{
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+    padding:1em;
+    margin: 1.5em;
+    background-color: rgb(255, 204, 204);
+    border-style: solid ;
+    border-color: black;
+    border-radius: 4px;
+    text-align: justify;
+    font-size: 1.3em;
+}
+.text2{
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+    padding:1em;
+    margin: 1.5em;
+    background-color: rgb(255, 204, 204);
+    border-style: solid ;
+    border-color: black;
+    border-radius: 4px;
+    text-align: justify;
+    font-size: 1.3em;
+}
+.text3{
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+    padding:1em;
+    margin: 1.5em;
+    background-color: rgb(255, 204, 204);
+    border-style: solid ;
+    border-color: black;
+    border-radius: 4px;
+    text-align: justify;
+    font-size: 1.3em;
 }

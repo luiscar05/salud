@@ -1,22 +1,45 @@
-.textOone{
-    /* */
-    
-    text-align: left;
-    color: black;
-    font-size: 2em;
-}
-.textTwo{
-    text-align: right;
-    color: black;
-    font-size: 2em;
-}
-.textThree{
-    text-align: center;
-    color: black;
-    font-size: 2em;
-}
-.textFour{
+
+.box{
+    display: inline-block;
+    width: 200px;
+    height: 250px;
     text-align: justify;
-    color: black;
-    font-size: 2em;
+    color: white;
+    margin-top: 2em;
+}
+.Blockquote1{
+    font-size: 1.4em;
+    background-color: rgb(27, 69, 67);
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 1em;
+    border:  3px solid darkcyan;
+}
+.Blockquote2{
+    font-size: 1.4em;
+    background-color: rgb(21, 80, 52);
+    margin-right: 10px;
+    padding: 1em;
+    border: 3px dashed black  ;
+}
+.Blockquote3{
+    font-size: 1.4em;
+    background-color: rgb(46, 44, 93);
+    margin-right:  10px;
+    padding: 1em;
+    border: 3px dotted rgb(15, 15, 15) ;
+}
+.Blockquote4{
+    font-size: 1.4em;
+    background-color: rgb(32, 35, 52);
+    margin-right:  10px;
+    padding: 1em;
+    border: 5px double rgb(240, 234, 234) ;
+}
+.Blockquote5{
+    font-size: 1.4em;
+    background-color: rgb(125, 55, 171);
+    margin-right: 5px;
+    padding: 1em;
+    border: 3px outset rgb(15, 15, 15) ;
 }
