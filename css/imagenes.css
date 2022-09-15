@@ -1,0 +1,25 @@
+.imagen-100{
+    width:580px;
+   display: inline;
+   margin-left: 1em;
+   margin-right: 1em;
+}
+
+h1{
+    text-align: center;
+    color: black;
+    font-size: 6em;
+    background-color: burlywood;
+}
+h2{
+    text-align: center;
+}
+
+.box-mundo{
+    display: inline-flex;
+}
+p{
+    text-align: justify;
+    color: gray;
+    padding: 1em;
+}

@@ -10,8 +10,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px black outset; 
-    border-radius: 5px;
+    
+    
     
 }
 .perfil{
