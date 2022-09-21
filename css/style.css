@@ -71,3 +71,6 @@ h2{
     text-align: justify;
     font-size: 1.3em;
 }
+nav{
+    display: inline;
+}
