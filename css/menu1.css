@@ -1,0 +1,16 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.box{
+    color: blue;
+    display: inline-block;
+    
+}
+.menu{
+    text-align: right;
+    background-color: aquamarine;
+    word-spacing: 1em;
+    width: 100%;
+    font-size: 4em;
+}
