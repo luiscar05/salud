@@ -2,15 +2,19 @@
     padding: 0px;
     margin: 0px;
 }
-.box{
-    color: blue;
-    display: inline-block;
-    
+ul{
+    list-style: none;
+    text-align: center;
+    font-size: 1.3em;
 }
-.menu{
-    text-align: right;
-    background-color: aquamarine;
-    word-spacing: 1em;
-    width: 100%;
-    font-size: 4em;
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    display: inline-block;
+    padding: 15px;
+}
+nav{
+    background-color: rgb(64, 64, 64);
 }
