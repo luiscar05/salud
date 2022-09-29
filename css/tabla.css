@@ -1,0 +1,30 @@
+th{
+    border: 3px solid black;
+    border-radius: 7px;
+    padding: 10px 12px;
+    background-color: rgb(76, 211, 216);
+    width: max-content;
+}
+table{
+    border-collapse: separate;
+    
+}
+td{
+    border: 3px solid black;
+    border-radius: 7px;
+    text-align: center;
+    padding: 10px 12px;
+    background-color: rgb(252, 252, 252);
+}
+.style-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+img{
+    width: 150px;
+}
