@@ -5,14 +5,15 @@ h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5em;
     color: #ff0000;
+    
 }
 .imagen{
     display: flex;
     justify-content: center;
-    align-items: center;
-    
-    
-    
+    align-items: center; 
+    margin: auto;
+    border-radius: 7px;
+    box-shadow: 15px 15px 15px rgb(1,77 ,77 );
 }
 .perfil{
    
@@ -24,6 +25,7 @@ body{
 p{
     font-size: 1.5em;
     text-align: justify;
+    text-align: center;
 }
 h2{
     display: flex;
@@ -38,7 +40,9 @@ h2{
     width: 300px;
     padding:1em;
     margin: 1.5em;
+    margin-left: 3.5em;
     background-color: darkcyan;
+    border-radius: 7px;
     text-align: justify;
     font-size: 1.3em;
     box-shadow:15px 15px 15px rgb(1,77 ,77 ) ;
@@ -55,6 +59,7 @@ h2{
     text-align: justify;
     font-size: 1.3em;
     box-shadow:15px 15px 15px rgb(1,77 ,77 ) ;
+    border-radius: 7px;
     vertical-align: top;
 
 }
@@ -65,9 +70,59 @@ h2{
     padding:1em;
     margin: 1.5em;
     background-color: darkcyan;
+    border-radius: 7px;
     text-align: justify;
     font-size: 1.3em;
     box-shadow:15px 15px 15px rgb(1,77 ,77 ) ;
     vertical-align: top;
 
 }
+.perfil{
+    width: 100%;
+    background: rgb(192, 163, 130);
+    padding: 0px;
+}
+nav{
+    height: 100%;
+    color: rgb(7, 7, 7);
+}
+nav>ul{
+    height: 100%;
+    display: inline-flex;
+}
+
+nav>ul>li{
+    height: 100%;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+
+}
+.menu2>li>a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color:white;
+   list-style: none;
+}
+
+.menu2{
+    display: inline-flex;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+a, .menu{
+    text-decoration: none;
+    list-style: none;
+}
+
+/*
+.row1 :hover{
+    background-color: rgb(167, 118, 27);
+    width: 15px;
+    box-shadow: 8px 8px 10px rgb(73, 51, 9);
+}*/
+
+
