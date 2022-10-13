@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="./css/formulario.css">
+</head>
+<body>
+    <h1>citas medicas</h1>
+    <form>
+        <fieldset>
+            <legend>ingrese la informacion solicitada</legend>
+        <label >ingrese su tipo de documento</label>
+        <select >
+            <option>registro civil</option>
+            <option>targeta de identidad</option>
+            <option>cedula de ciudadania</option>
+            <option>cedula extranjera</option>
+        </select> 
+        
+        <label>ingrese su numero de documento</label>
+        <input type="text" placeholder="ingrese el numero de documento" >
+        <label>ingrese su nombre </label>
+        <input type="text" placeholder="ingrese su nombre">
+        <label>ingrese su apellido</label>
+        <input type="text" placeholder="ingrese su apellido" >
+        <label>ingrese su genero</label>
+        <input type="radio" name="genero" > masculino <br>
+        <input type="radio" name="genero" > femenino <br>
+        <input type="radio" name="genero" > no determinado <br>
+        <label for="">seleccione el dia de la cita</label>
+        <input type="checkbox" name="dia cita" id="">lunes<br>
+        <input type="checkbox" name="dia cita" id="">martes<br>
+        <input type="checkbox" name="dia cita" id="">miercoles<br>
+        <input type="checkbox" name="dia cita" id="">jueves<br>
+        <input type="checkbox" name="dia cita" id="">viernes<br>
+        <label for="">dudas e inquietudes</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="enviar">
+        
+        <button>confirmar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

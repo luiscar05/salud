@@ -1,18 +1,17 @@
 th{
-    border: 3px solid black;
-    border-radius: 7px;
+    border: 1.5px solid rgb(5, 10, 25.9);
     padding: 10px 12px;
     background-color: rgb(76, 211, 216);
     width: max-content;
 }
 table{
-    border-collapse:separate;
-    box-shadow: 10px 10px 10px black;
+    border-collapse:collapse;
+    
 }
 td{
-    border: 3px solid black;
-    border-radius: 7px;
+    
     text-align: center;
+    border: 1.5px solid rgb(5, 10, 25.9);
     padding: 10px 12px;
     background-color: rgb(252, 252, 252);
     background-size: cover;
@@ -53,5 +52,14 @@ button:hover{
     width: 80px;
     height: 80px;
     box-shadow: 8px 8px 10px darkcyan;
+}
+.borde1{
+    border-radius: 10px 10px 0px 0px;
+}
+.borde3{
+    border-radius: 0px 0px 10px 0px;
+}
+.borde2{
+    border-radius: 0px 0px 0px 10px;
 }
 
