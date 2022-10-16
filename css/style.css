@@ -81,6 +81,8 @@ h2{
     width: 100%;
     background: rgb(192, 163, 130);
     padding: 0px;
+    float: left;
+    
 }
 nav{
     height: 100%;
@@ -89,6 +91,9 @@ nav{
 nav>ul{
     height: 100%;
     display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    
 }
 
 nav>ul>li{
@@ -96,33 +101,76 @@ nav>ul>li{
     list-style: none;
     text-decoration: none;
     position: relative;
+    float: left;
+    
+    
 
-}
-.menu2>li>a{
+}*/
+nav>ul>li>.menu2>li>a{
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     color:white;
    list-style: none;
-}
+   float: left;
+   display: none;
+}*/
 
 .menu2{
     display: inline-flex;
     text-align: center;
     text-decoration: none;
     list-style: none;
-}
+    float: left;
+    display:none
+}*/
 a, .menu{
     text-decoration: none;
     list-style: none;
-}
+    float: left;
+    display: none;
+}*/
+.menu{
+    color: black;
+    list-style: none;
+    float: none;
+    display: none;
 
+}*/
+.menu:hover{
+    background: #f6f6f6;
+    border-radius: 3px;
+    font-size: 1em;
+    float: left;
+    display: none;
+}
+.row3, .row2, .row1{
+    font-size: 2em;
+    color: black;
+    font-weight: 300;
+    
+
+}
+.row3>li{
+    float: left;
+    display: none;
+}
+.row3 :hover{
+    background-color: cadetblue;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+
+}
+nav> ul>li>ul>.menu1>.menu{
+    float: left;
+    display: none;
+}
 /*
 .row1 :hover{
     background-color: rgb(167, 118, 27);
     width: 15px;
     box-shadow: 8px 8px 10px rgb(73, 51, 9);
 }*/
-
 

@@ -4,11 +4,26 @@ form{
     justify-content: center;
     align-items: center; 
     text-align: left;
+   
 }
 legend{
-    text-align: center;
-    width: 600px;
+    font-size: 2em;
+    
+    
 }
+
+h1{
+    margin: auto;
+    text-align: center;
+    color: black;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #42f2ad;
+    width: 350px;
+    box-shadow: 10px 10px 15px black;
+}
+
 
 label{
     display: block;
@@ -29,7 +44,7 @@ input[ type="text"]:hover{
     padding: 2px;
 }
 input[type="submit"]:hover{
-    background-color: rgb(19, 223, 19);
+    background-color: #42f2ad;
     border-radius: 20px;
 }
 h1{
