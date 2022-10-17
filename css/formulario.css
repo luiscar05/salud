@@ -4,10 +4,12 @@ form{
     justify-content: center;
     align-items: center; 
     text-align: left;
+    
    
 }
 legend{
-    font-size: 2em;
+    font-size: 150%;
+    width: 400px;
     
     
 }
@@ -20,7 +22,7 @@ h1{
     border-radius: 20px;
     text-align: center;
     background-color: #42f2ad;
-    width: 350px;
+    width: 40%;
     box-shadow: 10px 10px 15px black;
 }
 

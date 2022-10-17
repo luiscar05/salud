@@ -1,10 +1,13 @@
 h1 {
     display: flex;
+    margin: auto;
+    text-align: center;
     justify-content: center;
-    align-items: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 5em;
+    font-size: 450%;
     color: #ff0000;
+    padding: 0.5%;
+    
     
 }
 .imagen{
@@ -12,20 +15,21 @@ h1 {
     justify-content: center;
     align-items: center; 
     margin: auto;
-    border-radius: 7px;
+    border-radius: 50%;
     box-shadow: 15px 15px 15px rgb(1,77 ,77 );
 }
 .perfil{
    
-    font-size: 1em;
+    font-size: 100%;
+    margin: auto;
 }
 body{
     background-color:rgb(209, 193, 193) 
 }
 p{
-    font-size: 1.5em;
+    font-size: 200%;
     text-align: justify;
-    text-align: center;
+    margin: auto;
 }
 h2{
     display: flex;
@@ -40,7 +44,7 @@ h2{
     width: 300px;
     padding:1em;
     margin: 1.5em;
-    margin-left: 3.5em;
+    margin: 1.5em;
     background-color: darkcyan;
     border-radius: 7px;
     text-align: justify;
@@ -129,13 +133,14 @@ a, .menu{
     text-decoration: none;
     list-style: none;
     float: left;
-    display: none;
+    display: block;
+
 }*/
 .menu{
     color: black;
     list-style: none;
     float: none;
-    display: none;
+    display: block;
 
 }*/
 .menu:hover{
@@ -143,18 +148,28 @@ a, .menu{
     border-radius: 3px;
     font-size: 1em;
     float: left;
-    display: none;
+    display: block;
 }
 .row3, .row2, .row1{
-    font-size: 2em;
+    font-size: 120%;
     color: black;
     font-weight: 300;
-    
-
+    display:block;
 }
+
 .row3>li{
     float: left;
     display: none;
+}
+nav > .row3>.menu2>.menu1{
+    float: left;
+    display: block;
+}
+nav > .row3>.menu2>.menu1>.menu:hover{
+    background-color: cadetblue;
+    float: left;
+    display: none;
+    
 }
 .row3 :hover{
     background-color: cadetblue;
@@ -165,7 +180,7 @@ a, .menu{
 }
 nav> ul>li>ul>.menu1>.menu{
     float: left;
-    display: none;
+    display: block;
 }
 /*
 .row1 :hover{
