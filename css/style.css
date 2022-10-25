@@ -81,6 +81,10 @@ h2{
     vertical-align: top;
 
 }
+.icons_style{
+    color: rgb(254, 254, 255);
+    
+}
 ul,ol{
     list-style: none;
 }
@@ -112,21 +116,21 @@ ul,ol{
     position: relative;
 }
 .nav li ul li ul{
-    left: 90px;
+    left: 130px;
     top:0px;
+    position: absolute;
     
 }
 
 .perfil{
     width: 100%;
     
-    background: rgb(192, 163, 130);
     padding: 0px;
     float: left;  
 }
 .perfil:hover{
-    height: 42vh;
-    background: rgb(192, 163, 130);
+    height: 80vh;
+    
 }
 /*nav{
     height: 100%;
@@ -191,10 +195,34 @@ a, .menu{
     display: block;
 }*/
 .row3, .row2, .row1{
-    font-size: 120%;
-    color: rgb(34, 33, 33);
+    font-size: 150%;
+    color: rgb(253, 249, 249);
     font-weight: 300;
     display:inline-block;
+    border: 1px solid black;
+    background-color: black;
+    width: 20%;
+    border-radius: 2px;
+    text-align: center;
+}
+.row3:hover{
+    background-color: rgb(71, 70, 70);
+   
+    color: white;
+}
+.menu1{
+    border: 1px solid black;
+    width: 55%;
+    background-color: rgb(31, 30, 30);
+    color: rgb(250, 246, 246);
+    padding: 2%;
+    display: block;
+    position: relative;
+    border-radius: 3px;
+}
+.menu1:hover{
+    background-color: gray;
+    box-shadow: 3px 3px 3px;
 }
 
 /*.row3>li a{
