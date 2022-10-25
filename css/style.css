@@ -81,8 +81,6 @@ h2{
     vertical-align: top;
 
 }
-
-
 ul,ol{
     list-style: none;
 }
@@ -91,17 +89,15 @@ ul,ol{
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 19px 25px;
-    display: block;
+    
 }
+
 .nav li a:hover{
     background-color: black;
-
 }
-.nav li {
+.nav li a {
     float: left;
-    
-    
-    
+      
 }
 .nav li ul{
     display: none;
@@ -116,17 +112,21 @@ ul,ol{
     position: relative;
 }
 .nav li ul li ul{
-    left: 140px;
+    left: 90px;
     top:0px;
     
 }
 
 .perfil{
     width: 100%;
+    
     background: rgb(192, 163, 130);
     padding: 0px;
-    float: left;
-    
+    float: left;  
+}
+.perfil:hover{
+    height: 42vh;
+    background: rgb(192, 163, 130);
 }
 /*nav{
     height: 100%;
@@ -189,14 +189,15 @@ a, .menu{
     font-size: 1em;
     float: left;
     display: block;
-}
+}*/
 .row3, .row2, .row1{
     font-size: 120%;
-    color: black;
+    color: rgb(34, 33, 33);
     font-weight: 300;
-    display:block;
+    display:inline-block;
 }
-.row3>li a{
+
+/*.row3>li a{
     float: left;
     display: none;
 }
