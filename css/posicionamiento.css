@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    margin-top: 5%;
+}
+.main-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+}
+h1{
+    background-color: rgb(124, 202, 202);
+    width: 60%;
+    border-radius: 7px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+h2{
+    font-size: 30px;
+    color: rgb(221, 112, 112);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    text-align: center;
+    color: black;
+    padding: 20px;
+    position: static;  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(199, 196, 192);
+    position: static;
+    border-radius: 7px ; 
+}
+.two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgb(238, 211, 175);
+    position: static;
+    border-radius: 7px ; 
+}
+.three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 186, 116);
+    border-radius: 7px ;
+    
+}
+.four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 149, 40);
+    border-radius: 7px ;   
+}
+.one-fixed{
+    background-color: rgb(224, 248, 200);
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 200px;
+    right: 0;
+    bottom: -100px;
+    
+}
+.two-fixed{
+    background-color: rgb(193, 241, 145);
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one-fixed .iconos{
+    position:fixed;
+    color: black;
+    background-color: white;
+}
+.box-1-abs{
+    position: absolute;
+    background-color: rgb(79, 79, 230);
+    width: 250px;
+    height: 250px;
+}
+.box-2-abs{
+    margin-top: 20px;
+    background-color: rgb(48,48,48.9);
+    width: 100%;
+    position: absolute;
+    color: white;
+}
+.item-menu{
+    padding: 15px 30px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main-menu{
+    text-align: right;
+    width: 100%;
+}
+.item-menu:hover {
+    background-color: rgb(160, 156, 156);
+    box-shadow: 3px 3px 3px white;
+    color: black;
+}

@@ -116,7 +116,7 @@ ul,ol{
     position: relative;
 }
 .nav li ul li ul{
-    left: 130px;
+    left: 140px;
     top:0px;
     position: absolute;
     
@@ -212,7 +212,7 @@ a, .menu{
 }
 .menu1{
     border: 1px solid black;
-    width: 55%;
+    width: 60%;
     background-color: rgb(31, 30, 30);
     color: rgb(250, 246, 246);
     padding: 2%;
