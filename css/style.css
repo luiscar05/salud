@@ -93,6 +93,9 @@ ul,ol{
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 19px 25px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 4px;
     
 }
 
