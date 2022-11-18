@@ -14,8 +14,7 @@ let main_Menu = document.getElementById("mainMenu");
 }) */
 
 barMenu.addEventListener("click", function() {
-    alert();
-    if (main_Menu.classList.contains("main-Menu")) {
+    if (main_Menu.classList.contains("main-menu")) {
         main_Menu.classList.add("main-menu-visible");
         main_Menu.classList.remove("main-menu");
     }
