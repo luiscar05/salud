@@ -86,7 +86,7 @@ h2{
     padding: 5px;
     
 }
-nav{
+/* nav{
     position: fixed;
     top: 0;
     left: 0;
@@ -115,13 +115,13 @@ nav ul{
 nav a{
     text-decoration: none;
     display: block ;
-    padding: 0 3em;
+    padding: 30px;
     color: white;
     border: 1px solid white;
     
 }
 /*menu primer nivel*/
-nav > ul > li{
+/*nav > ul > li{
     float: left;
     width: 384px;
     line-height: 70px;
@@ -156,8 +156,19 @@ nav ul ul ul{
     margin: 1em;
     color: white;
     font-size: 15px;
-}
-/* ul,ol{
+} */
+ nav{
+    padding: 35px 45px;
+    width: 100%;
+    height: 80px;
+    color: rgb(19, 18, 18);
+    
+    display:inline-block;
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+ }
+ul,ol{
     list-style: none;
 }
 .nav li a{
@@ -191,7 +202,7 @@ nav ul ul ul{
     position: relative;
 }
 .nav li ul li ul{
-    left: 140px;
+    left: 150px;
     top:0px;
     position: absolute;
     
@@ -212,11 +223,12 @@ nav ul ul ul{
     color: rgb(253, 249, 249);
     font-weight: 300;
     display:inline-block;
-    /* border: 1px solid black; */
- /*    background-color: black;
+    border: 1px solid black; 
+    background-color: black;
     width: 20%;
     border-radius: 2px;
     text-align: center;
+
 }
 .row3:hover{
     background-color: rgb(71, 70, 70);
@@ -236,7 +248,7 @@ nav ul ul ul{
 .menu1:hover{
     background-color: gray;
     box-shadow: 3px 3px 3px;
-} */ */
+}  
 .bar-menu{
     position: fixed;
     top: 20px;
@@ -245,42 +257,45 @@ nav ul ul ul{
      visibility: hidden;
      font-size: 1.5em; 
 }
-@media only screen and (max-width=1152px) {
-    .bar-menu{
-        visibility: visible;
-    }
-    nav{
+@media  only screen and  (max-width:1152px){
+    .bar-menu {
+        
+        visibility: visible;  
+    } 
+    nav{ 
+        background-color: rgb(26, 26, 26);
         position: fixed;
         margin-top: 0;
         width: 100%;
         height: 80px;
+    } 
+     .nav{
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+        display: block;
+        width: 100%;
+        margin-right: 20px;
+
     }
-    li{
+    .row1,.row2,.row3{
+        
+        font-size: 15px;
         width: 100%;
         display: block;
-        line-height: 70px;
-        padding: 0;
+        line-height: 40px;
         text-align: center;
         border-bottom: 1px solid white;
-    }  
-     .bar-menu {
-        
-        visibility: visible;  
-    } 
-    .main-menu-visible {
-        background-color: rgba(80, 80, 80, 0.9);
-        margin-top: 80px;
-        padding: 0;
-        display: block;
     }
-    .main-menu{
-        display: none;
+    .nav li ul li ul{
+        left: 80px;
+        top:0px;
+        position: absolute;
         
-    } 
-    li:hover{
-        background-color: rgb(48,48,48,.9);
-    } 
+    }
     
 }
+
 
 
