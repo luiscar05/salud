@@ -2,9 +2,8 @@
     padding: 0;
     margin: 0;
 }
-
 .menu_bar{
-    display:none;
+    display:none; 
 }
 nav{
     background-color: #023859;
@@ -25,7 +24,7 @@ nav ul li:hover{
 nav ul li a{
     display: block;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-decoration: none;
     padding: 20px;
 }
@@ -71,18 +70,27 @@ p{
 @media only screen and (max-width: 720px){
     body{
         padding-top: 70px;
-
     }
     h1{
         margin: 35px 0 35px 35px;
     }
-    nav{
+    .despliege-inactivo{
         position: fixed;
         height: 100vh;
-        width: 60%;
+        width: 0%;
+        left: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+         
+    }
+    .vertical{
+        position: fixed;
+        height: 100vh;
+        width: 50%;
         left: 0%;
         overflow-y: auto;
         overflow-x: hidden;
+        transition: all 0.5s;
     }
     .menu_bar{
         display: block;
@@ -119,6 +127,4 @@ p{
     nav ul li:hover .children{
         display: none;
     }
-
-
 }
