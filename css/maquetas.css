@@ -1,0 +1,44 @@
+.main-box{
+    display: grid;
+    grid-template: "logo       busqueda     boton-empresas  btn-iniciar-sesion  menu-hamburger" 60px 
+                    "main-img  main-img     main-img        main-img            main-img" 400px/
+                    100px      1fr          300px           300px               70px;
+}
+.logo{
+    grid-area: logo;
+    background-color: rgb(152,202,63);
+}
+.busqueda{
+    grid-area: busqueda;
+    background-color: gainsboro;
+}
+.boton-empresas{
+    grid-area: boton-empresas;
+    background-color: rgb(18,31,61);
+}
+.btn-iniciar-sesion{
+    grid-area: btn-iniciar-sesion;
+    background-color: goldenrod;
+}
+.menu-hamburger{
+    grid-area: menu-hamburger;
+    background-color: darkcyan;
+}
+.main-img{
+    grid-area: main-img;
+    background-color: dodgerblue;
+}
+.texto-grid{
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.texto-grid2{
+    color: black;
+    font-size: 1.5em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ 
