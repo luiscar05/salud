@@ -103,7 +103,7 @@ button{
 }
 button{
     display: flex;
-    margin-top: 60px;
+    margin-top: 30px;
     justify-content: center;
     align-items: center;
     width: 150px;
