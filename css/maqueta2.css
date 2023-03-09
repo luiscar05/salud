@@ -12,15 +12,18 @@
     grid-area: cabeza;
     background-color: rgb(243, 44, 44);
     border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .img-principal{
     grid-area: imagen-prin;
     background-color: darkcyan;
     border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .img-articulo{
     background-color: rgb(71, 71, 71);
     border-radius: 40px;
+    box-shadow: rgba(45, 33, 41, 0.4) 5px 5px, rgba(49, 34, 43, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 .one{
     grid-area: aticulo1;
@@ -34,6 +37,7 @@
 .texto-articulo{
     border: 1px solid black;
     border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .art1{
     grid-area: txt-art1;
@@ -57,7 +61,30 @@
     font-size: 1.8em;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-@media only screen and (max-width:1050px){
+@media only screen and (max-width:1150px){
+    .mainbox{
+        grid-template: "empty-left   cabeza        empty-head   empty-head    empty-right" 100px
+                       "empty-left   imagen-prin   imagen-prin  imagen-prin   empty-right" 450px
+                       "empty-left   aticulo1      empty-img-1  aticulo2      empty-right" 250px
+                       "empty-left   txt-art1      empty-img-1  txt-art2      empty-right"
+                       "empty-left   aticulo3      empty-img-1  empty-img-3   empty-right" 250px
+                       "empty-left   txt-art3      empty-img-1  empty-img-3   empty-right" /
+                        1fr          43%           2%          43%           1fr;
+    }
 
 }
+@media only screen and (max-width:1000px){
+    .mainbox{
+        grid-template:   "empty-left   cabeza      empty-right" 120px
+                         "empty-left   imagen-prin empty-right" 500px
+                         "empty-left   aticulo1    empty-right" 250px
+                         "empty-left   txt-art1    empty-right" 
+                         "empty-left   aticulo2    empty-right" 250px
+                         "empty-left   txt-art2    empty-right" 
+                         "empty-left   aticulo3    empty-right" 250px
+                         "empty-left   txt-art3    empty-right"  /
+                          1fr          80%         1fr;
+    }
+}
+
 
