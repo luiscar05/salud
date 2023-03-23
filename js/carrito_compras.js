@@ -1,0 +1,1 @@
+let imgPrincipal=document.getElementById("imgPrincipal");
