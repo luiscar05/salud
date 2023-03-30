@@ -1,13 +1,95 @@
-*{
-    margin: 0;
-    padding: 0;
+.menu{
+   border-bottom: 0.7px solid rgb(197, 196, 196);
+   width: 100%;
 }
-.img_principal{
-    background-color: goldenrod;
-    width: 300px;
-    height: 350px;
+nav{
+    display: inline-block;
+}
+li{
+    list-style: none;
+    padding: 20px;
+    margin:5px;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9em;
+}
+li:hover{
+    border-bottom: 3px solid rgb(255, 125, 26);
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+h1{
+    text-align: center;
+}
+.img{
+    
+   
+}
+.box-main{
+    margin: 0 70px;
+    display: grid;
+    grid-template: "img-box-main    empty"/
+                    435px             1fr;
+}
+.img-box-main{
+    display: grid;
+    width: 100%;
+    grid-template:"img-box     img-box       img-box       img-box    img-box      img-box    img-box" 435px
+                  "empty-0     empty-0       empty-0       empty-0    empty-0      empty-0    empty-0" 30px
+                  "box-img-1   empty-1       box-img-2     empty-2    box-img-3    empty-3    box-img-4" 90px/ 
+                   90px        25px          90px          25px       90px         25px       90px
+}
+.img-box{
+    grid-area: img-box;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 10px;
     cursor: pointer;
 }
-.fondo_oscuro{
-    background-color: rgb(64,64,64.3);
+.box-img-1{
+    grid-area: box-img-1;
 }
+.box-img-2{
+    grid-area: box-img-2;
+}
+.box-img-3{
+    grid-area: box-img-3;
+}
+.box-img-4{
+    grid-area: box-img-4;
+}
+.img-mini{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.box-img-mini{
+  
+    border: 2px solid rgb(255, 125, 26);
+    border-radius: 15px;
+}
+.img-mini-activo{
+    opacity: 0.4;
+}
+
+/* .img-mini2{
+    grid-area: img-mini-2;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.img-mini3{
+    grid-area: img-mini-3;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;  
+}
+.img-mini4{
+    grid-area: img-mini-4;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;   
+} */
+
