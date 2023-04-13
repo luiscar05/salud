@@ -1,9 +1,16 @@
+*{
+    font-family: Tahoma, sans-serif;
+}
 .menu{
    border-bottom: 0.7px solid rgb(197, 196, 196);
    width: 100%;
+   margin-bottom: 40px;
 }
 nav{
     display: inline-block;
+}
+ul{
+    display: flex;
 }
 li{
     list-style: none;
@@ -14,7 +21,7 @@ li{
     font-size: 0.9em;
 }
 li:hover{
-    border-bottom: 3px solid rgb(255, 125, 26);
+    border-bottom: 2px solid rgb(255, 125, 26);
 }
 a{
     text-decoration: none;
@@ -22,10 +29,6 @@ a{
 }
 h1{
     text-align: center;
-}
-.img{
-    
-   
 }
 .box-main{
     margin: 0 70px;
@@ -73,23 +76,34 @@ h1{
 .img-mini-activo{
     opacity: 0.4;
 }
-
-/* .img-mini2{
-    grid-area: img-mini-2;
-    width: 100%;
-    border-radius: 10px;
+.cant-box{
+    display: flex;
+   flex-direction: row;
+} 
+.icon-po{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(255, 125, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid whitesmoke;
+    
+}
+.cant-obj{
+    color: black;
+    font-size: 1.3em;
+}
+.subs-obj{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     cursor: pointer;
 }
-.img-mini3{
-    grid-area: img-mini-3;
-    width: 100%;
-    border-radius: 10px;
-    cursor: pointer;  
+.add-obj{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
 }
-.img-mini4{
-    grid-area: img-mini-4;
-    width: 100%;
-    border-radius: 10px;
-    cursor: pointer;   
-} */
-

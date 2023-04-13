@@ -51,3 +51,31 @@ imgMini4.addEventListener("click",function () {
     BoxMini3.classList.remove("img-mini-activo")
     BoxMini4.classList.add("img-mini-activo")
 })
+/* botones de aumentar y disminuir compra */
+let btnRestar=document.getElementById("restaObj")
+let btnSumar=document.getElementById("sumaObj")
+let contObj=document.getElementById("cantidad_obj")
+let cantBox=document.getElementById("cantBox")
+let numElementos= document.getElementById("numeroElement")
+
+btnRestar.addEventListener("click",function(){
+    
+    let numElementosTxt=document.getElementById("numeroElement").innerHTML
+    if (numElementosTxt>0) {
+        numElementos.innerHTML=""
+        let elemntInt=parseInt(numElementosTxt)
+        let totalElementosInt=elemntInt-1
+        let totalElementosTxt=totalElementosInt.toString()
+        numElementos.innerHTML=totalElementosTxt 
+    }
+})
+btnSumar.addEventListener("click",function(){
+    let numElementosTxt=document.getElementById("numeroElement").innerHTML
+    if (numElementosTxt<10) {
+        numElementos.innerHTML=""
+        let elemntInt=parseInt(numElementosTxt)
+        let totalElementosInt=elemntInt+1
+        let totalElementosTxt=totalElementosInt.toString()
+        numElementos.innerHTML=totalElementosTxt  
+    }
+})
