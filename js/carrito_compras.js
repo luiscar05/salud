@@ -79,3 +79,7 @@ btnSumar.addEventListener("click",function(){
         numElementos.innerHTML=totalElementosTxt  
     }
 })
+let ConfirCompra=document.getElementById("ConfirCompra")
+ConfirCompra.addEventListener("click",function(){
+    alert ("Producto Agregado Al Carrito")
+})
