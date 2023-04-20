@@ -9,6 +9,16 @@
     <title>Document</title>
 </head>
 <body>
+    <div  id="lightBox" class="lighbox ligh-hidden">
+        <div class="main-lighbox">
+               <div id="cerrar" class="btn-style btn-cerrar"><i class="style-btn fa-solid fa-xmark"></i></div>
+               <div class="btn-style btn-atras"><i class="style-btn fa-solid fa-chevron-left"></i></div> 
+               <div class="btn-style btn-adelante"><i class="style-btn fa-solid fa-chevron-right"></i></div>
+               <img src="./img/image-product-1.jpg"  class="img-main-ligh">
+        </div>
+    </div>
+
+
     <h1>Carrito De Compras</h1>
     <div class="menu">
         <nav>
@@ -23,8 +33,14 @@
                 </div>  
             </ul>
         </nav>  
-        
     </div>
+
+    <div  class="product-add">
+        <p id="Product-add">0</p>
+    </div>
+
+
+    
     <div class="box-main">
         <div class="img-box-main">
             <!-- <div id="imgBox" class="img img-box"  > -->
@@ -36,9 +52,12 @@
             <div id="boxMini4" class="box-img-4"><img id="imgMini4" class="img-mini" src="./img/img-mini-4.jpg" alt="mini-4"></div>
         </div>
         <div class="buy-box">
-            <div id="cantBox" class="cant-box">
+            <div class="valor-pro">
+              <p id="costoPro" class="precio">$85.000</p>
+            </div>
+            <div id="cantBox" class="cant-box">  
                 <div id="restaObj" class="icon-po subs-obj"><i class="fa-solid fa-minus"></i></div>
-                <div id="cantidad_obj" class="icon-po cant-obj"><span id="numeroElement"> 1</span></div>
+                <div id="cantidad_obj" class="icon-po cant-obj"><span id="numeroElement">1</span></div>
                 <div id="sumaObj" class="icon-po add-obj"><i class="fa-solid fa-plus"></i></div>
                 <p></p>
 
