@@ -11,15 +11,30 @@
 <body>
     <div  id="lightBox" class="lighbox ligh-hidden">
         <div class="main-lighbox">
-               <div id="cerrar" class="btn-style btn-cerrar"><i class="style-btn fa-solid fa-xmark"></i></div>
-               <div class="btn-style btn-atras"><i class="style-btn fa-solid fa-chevron-left"></i></div> 
-               <div class="btn-style btn-adelante"><i class="style-btn fa-solid fa-chevron-right"></i></div>
-               <img src="./img/image-product-1.jpg"  class="img-main-ligh">
+            <div id="cerrar" class="btn-cerrar"><i class="style-btn fa-solid fa-xmark"></i></div>
+            
+            <div id="btnatras" class="btn-style btn-atras"><i class="style-btn fa-solid fa-chevron-left"></i></div> 
+            <div id="btnadelante" class="btn-style btn-adelante"><i class="style-btn fa-solid fa-chevron-right"></i></div>
+               
+            <div class="box-img-activo">
+                <img id="imgMainLigh" src="./img/image-product-1.jpg"  class="img-main-ligh">
+               
+                
+                    
+                <div id="boxImgSecond1" class="box-ImgSecond1"><img id="imgSecundary-one" class="img-secundary  one" src="./img/img-mini-1.jpg" alt="mini-1"></div>    
+                <div id="boxImgSecond2" class="box-ImgSecond2"><img id="imgSecundary.two" class="img-secundary  two" src="./img/img-mini-2.jpg" alt="mini-2"></div>
+                <div id="boxImgSecond3" class="box-ImgSecond3"><img id="imgSecundary-three" class="img-secundary  three" src="./img/img-mini-3.jpg" alt="mini-3"></div>
+                <div id="boxImgSecond4" class="box-ImgSecond4"><img id="imgSecundary-four" class="img-secundary  four" src="./img/img-mini-4.jpg" alt="mini-4">  </div>
+                    
+                    
+            </div>
+              
         </div>
+        
     </div>
 
 
-    <h1>Carrito De Compras</h1>
+   <!--  <h1>Carrito De Compras</h1> -->
     <div class="menu">
         <nav>
             <ul>
@@ -28,9 +43,8 @@
                 <li><a href="#">Women</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
-                <div class="lado"> 
-                <li class="shopping-car"><a href="#"></a><i class="compra fa-solid fa-cart-plus"></i></li> 
-                </div>  
+                <li class="shopping-car"><a href="#"></a><i class="compra fa-solid fa-cart-plus"></i></li>
+                <!-- <li class="avatar"><a href="#"> --><img class="img-avatar" src="./img/image-avatar.png" alt=""><!-- </li> --> 
             </ul>
         </nav>  
     </div>
@@ -52,6 +66,21 @@
             <div id="boxMini4" class="box-img-4"><img id="imgMini4" class="img-mini" src="./img/img-mini-4.jpg" alt="mini-4"></div>
         </div>
         <div class="buy-box">
+            
+            <p class="orange">snaker company</p>
+            <h2>Fall Limited Edition <br> Sneakers</h2>
+            <p class="txt">These low-profile snakerare your perfect casual wear <br>
+                companion. Facturing a durable rubber outer sole they'll <br>
+            withstand everything the weather can offer</p>
+
+
+
+
+
+
+
+
+
             <div class="valor-pro">
               <p id="costoPro" class="precio">$85.000</p>
             </div>
@@ -63,11 +92,14 @@
 
                 <div id="ConfirCompra" class="confir-compra">
                     
-                    <p class="text-com"><i class="compra fa-solid fa-cart-plus"></i><span class="espacio"></span> agregar al carrito</p>
+                    <p class="text-com"><i class="compra fa-solid fa-cart-plus"></i><span class="espacio"></span> Add To Car</p>
                 </div>
             </div>
+        
         </div>
     </div>
-    <script src="js/carrito_compras.js"></script>
+    
+    <script src="./js/carrito_compras.js"></script>
+    
 </body>
 </html>

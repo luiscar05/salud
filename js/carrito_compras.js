@@ -10,15 +10,20 @@ let imgMini4=document.getElementById("imgMini4")
 let btnCerrar=document.getElementById("cerrar")
 let LighBox= document.getElementById("lightBox")
 
+
+
 btnCerrar.addEventListener("click",function () {
-  LighBox.classList.add("ligh-hidden")
-})
-imgPrincipal.addEventListener("click",function () {
-    LighBox.classList.remove("ligh-hidden")
+    LighBox.classList.add("ligh-hidden")
+  })
+  imgPrincipal.addEventListener("click",function () {
+      LighBox.classList.remove("ligh-hidden")
+      
+  })
     
-})
+
 imgMini1.addEventListener("click",function () {
-    imgPrincipal.setAttribute("src","img/image-product-1.jpg");  
+    imgPrincipal.setAttribute("src","img/image-product-1.jpg"); 
+    imgMainLigh.setAttribute("src","img/image-product-1.jpg")
     BoxMini1.classList.add("box-img-mini")
     BoxMini2.classList.remove("box-img-mini")
     BoxMini3.classList.remove("box-img-mini")
@@ -30,6 +35,7 @@ imgMini1.addEventListener("click",function () {
 })
 imgMini2.addEventListener("click",function () {
     imgPrincipal.setAttribute("src","img/image-product-2(1).jpg"); 
+    imgMainLigh.setAttribute("src","img/image-product-2(1).jpg")
     BoxMini1.classList.remove("box-img-mini")
     BoxMini2.classList.add("box-img-mini")
     BoxMini3.classList.remove("box-img-mini")
@@ -40,7 +46,8 @@ imgMini2.addEventListener("click",function () {
     BoxMini4.classList.remove("img-mini-activo")
 })
 imgMini3.addEventListener("click",function () {
-    imgPrincipal.setAttribute("src","img/image-product-3.jpg");  
+    imgPrincipal.setAttribute("src","img/image-product-3.jpg");
+    imgMainLigh.setAttribute("src","img/image-product-3.jpg")  
     BoxMini1.classList.remove("box-img-mini")
     BoxMini2.classList.remove("box-img-mini")
     BoxMini3.classList.add("box-img-mini")
@@ -52,6 +59,7 @@ imgMini3.addEventListener("click",function () {
 })
 imgMini4.addEventListener("click",function () {
     imgPrincipal.setAttribute("src","img/image-product-4.jpg");
+    imgMainLigh.setAttribute("src","img/image-product-4.jpg")
     BoxMini1.classList.remove("box-img-mini")
     BoxMini2.classList.remove("box-img-mini")
     BoxMini3.classList.remove("box-img-mini")
@@ -61,6 +69,8 @@ imgMini4.addEventListener("click",function () {
     BoxMini3.classList.remove("img-mini-activo")
     BoxMini4.classList.add("img-mini-activo")
 })
+
+
 /* botones de aumentar y disminuir compra */
 let btnRestar=document.getElementById("restaObj")
 let btnSumar=document.getElementById("sumaObj")
@@ -69,6 +79,8 @@ let cantBox=document.getElementById("cantBox")
 let numElementos= document.getElementById("numeroElement")
 let CostoProducto=document.getElementById("costoPro")
 
+let ConfirCompra=document.getElementById("ConfirCompra")
+let ProductAdd = document.getElementById("Product-add") 
 btnRestar.addEventListener("click",function(){
     
     let numElementosTxt=document.getElementById("numeroElement").innerHTML
@@ -86,10 +98,12 @@ btnRestar.addEventListener("click",function(){
         let totalProductoTxt=TotalProductoInt.toString()
         totalProductoTxt="$"+ new Intl.NumberFormat().format(totalProductoTxt)
         CostoProducto.innerHTML=totalProductoTxt
-
-
     }
+
+    
+   
 })
+
 btnSumar.addEventListener("click",function(){
     let numElementosTxt=document.getElementById("numeroElement").innerHTML
     let CostoProductoTxt=document.getElementById("costoPro").innerHTML
@@ -97,7 +111,7 @@ btnSumar.addEventListener("click",function(){
         numElementos.innerHTML=""
         let elemntInt=parseInt(numElementosTxt)
         let totalElementosInt=elemntInt+1
-        let totalElementosTxt=totalElementosInt.toString()
+        var totalElementosTxt=totalElementosInt.toString()
         numElementos.innerHTML=totalElementosTxt  
 
 
@@ -106,14 +120,90 @@ btnSumar.addEventListener("click",function(){
         let totalProductoTxt=TotalProductoInt.toString()
         totalProductoTxt= "$ "+new Intl.NumberFormat().format(totalProductoTxt)
         CostoProducto.innerHTML=totalProductoTxt
+
     }
+    
+    ProductAdd.innerHTML=totalElementosTxt 
+   
+        
 })
-let ConfirCompra=document.getElementById("ConfirCompra")
-let ProductAdd = document.getElementById("Product-add") 
-let CantPro=document.getElementById("numeroElement").innerHTML
+
+
 ConfirCompra.addEventListener("click",function(){
     alert ("Producto Agregado Al Carrito")
     ProductAdd.classList.remove("product-add")
     ProductAdd.classList.add("product-add-activo")
-    ProductAdd.innerHTML=CantPro
+    btnSumar.addEventListener("click",function () {
+        totalElementosTxt++
+        console(totalElementosTxt)
+    })
+    btnRestar.addEventListener("click",function () {
+        totalElementosTxt--
+        console(totalElementosTxt)
+    })
+    
+})
+
+
+let imgMainLigh=document.getElementById("imgMainLigh")
+let btnAdelante=document.getElementById("btnAdelante")
+let btnAtras=document.getElementById("btnAtras")
+let imgSecundary=document.getElementById("imgSecundary")
+let imgSecundaryOne=document.getElementById("imgSecundary-one")
+let imgSecundaryTwo=document.getElementById("imgSecundary-two")
+let imgSecundaryThree=document.getElementById("imgSecundary-three")
+let imgSecundaryFour=document.getElementById("imgSecundary-four")
+let boxSecond1=document.getElementById("boxImgSecond1")
+let boxSecond2=document.getElementById("boxImgSecond2")
+let boxSecond3=document.getElementById("boxImgSecond3")
+let boxSecond4=document.getElementById("boxImgSecond4")
+boxSecond1.addEventListener("click",function () {
+    imgMainLigh.setAttribute("src","img/image-product-1.jpg");
+    console.log("1")  
+    imgSecundaryOne.classList.add("box-radio")
+    imgSecundaryTwo.classList.remove("box-radio")
+    imgSecundaryThree.classList.remove("box-radio")
+    imgSecundaryFour.classList.remove("box-radio")
+    imgSecundaryOne.classList.add("img-opaca")
+    imgSecundaryTwo.classList.remove("img-opaca")
+    imgSecundaryThree.classList.remove("img-opaca")
+    imgSecundaryFour.classList.remove("img-opaca") 
+})
+boxSecond2.addEventListener("click",function () {
+    imgMainLigh.setAttribute("src","img/image-product-2(1).jpg")
+    console.log("2")
+    imgSecundaryOne.classList.remove("box-radio")
+    imgSecundaryTwo.classList.add("box-radio")
+    imgSecundaryThree.classList.remove("box-radio")
+    imgSecundaryFour.classList.remove("box-radio")
+    imgSecundaryOne.classList.remove("img-opaca")
+    imgSecundaryTwo.classList.add("img-opaca")
+    imgSecundaryThree.classList.remove("img-opaca")
+    imgSecundaryFour.classList.remove("img-opaca") 
+})
+boxSecond3.addEventListener("click",function () {
+    imgMainLigh.setAttribute("src","img/image-product-3.jpg");  
+    console.log("3")
+    imgSecundaryOne.classList.remove("box-radio")
+    imgSecundaryTwo.classList.remove("box-radio")
+    imgSecundaryThree.classList.add("box-radio")
+    imgSecundaryFour.classList.remove("box-radio")
+    imgSecundaryOne.classList.remove("img-opaca")
+    imgSecundaryTwo.classList.remove("img-opaca")
+    imgSecundaryThree.classList.add("img-opaca")
+    imgSecundaryFour.classList.remove("img-opaca") 
+    
+    })
+boxSecond4.addEventListener("click",function(){
+    imgMainLigh.setAttribute("src","img/image-product-4.jpg");
+    console.log("4")
+    imgSecundaryOne.classList.remove("box-radio")
+    imgSecundaryTwo.classList.remove("box-radio")
+    imgSecundaryThree.classList.remove("box-radio")
+    imgSecundaryFour.classList.add("box-radio")
+    imgSecundaryOne.classList.remove("img-opaca")
+    imgSecundaryTwo.classList.remove("img-opaca")
+    imgSecundaryThree.classList.remove("img-opaca")
+    imgSecundaryFour.classList.add("img-opaca") 
+    
 })
