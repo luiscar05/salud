@@ -14,11 +14,10 @@ let LighBox= document.getElementById("lightBox")
 
 btnCerrar.addEventListener("click",function () {
     LighBox.classList.add("ligh-hidden")
-  })
-  imgPrincipal.addEventListener("click",function () {
-      LighBox.classList.remove("ligh-hidden")
-      
-  })
+})
+imgPrincipal.addEventListener("click",function () {
+    LighBox.classList.remove("ligh-hidden")   
+})
     
 
 imgMini1.addEventListener("click",function () {
@@ -143,11 +142,124 @@ ConfirCompra.addEventListener("click",function(){
     })
     
 })
+let imagenes=['img/image-product-1.jpg','img/image-product-2(1).jpg','img/image-product-3.jpg','img/image-product-4.jpg']
+let cont=0
+let somb=0
+function carrusel( contenedor ) {
+    contenedor.addEventListener("click",e =>{
+        let atras=contenedor.querySelector('.btn-atras'),
+         adelante=contenedor.querySelector('.btn-adelante'),
+         img =contenedor.querySelector('.img-main-ligh'),
+         tgt =e.target;
+        
+        if (tgt==atras) {
+            if (cont>0) {
+                img.src=imagenes[cont-1]
+                cont--
+                
+                
+                
+            } else {
+               img.src=imagenes[imagenes.length-1] 
+               cont=imagenes.length-1
+               
+              
+            }
+            somb--
+            if (somb==0) {
+                boxSecond1.classList.add("box-radio")
+                boxSecond2.classList.remove("box-radio")
+                boxSecond3.classList.remove("box-radio")
+                boxSecond4.classList.remove("box-radio")
+                
+        
+            }else if (somb==1) {
+                boxSecond1.classList.remove("box-radio")
+                boxSecond2.classList.add("box-radio")
+                boxSecond3.classList.remove("box-radio")
+                boxSecond4.classList.remove("box-radio")
+                
+            }else if (somb==2) {
+                boxSecond1.classList.remove("box-radio")
+                boxSecond2.classList.remove("box-radio")
+                boxSecond3.classList.add("box-radio")
+                boxSecond4.classList.remove("box-radio")
+                
+            }else if (somb==3) {
+                boxSecond1.classList.remove("box-radio")
+                boxSecond2.classList.remove("box-radio")
+                boxSecond3.classList.remove("box-radio")
+                boxSecond4.classList.add("box-radio")
+                
+            }else{
+                boxSecond1.classList.remove("box-radio")
+                boxSecond2.classList.remove("box-radio")
+                boxSecond3.classList.remove("box-radio")
+                boxSecond4.classList.add("box-radio")
+               
+                somb=3
+            }  
+        }if (tgt==adelante) {
+            if (cont < imagenes.length-1) {
+                img.src=imagenes[cont+1]
+                cont++
+                console.log ("bien")
+            } else {
+               img.src=imagenes[0] 
+               cont=0
+               console.log ("bien")
+            }
+            somb++
+            if (somb==0) {
+                boxSecond1.classList.add("box-radio")
+                boxSecond2.classList.remove("box-radio")
+                boxSecond3.classList.remove("box-radio")
+                boxSecond4.classList.remove("box-radio")
+                
+        
+            }else if (somb==1) {
+                boxSecond1.classList.remove("box-radio")
+                boxSecond2.classList.add("box-radio")
+                boxSecond3.classList.remove("box-radio")
+                boxSecond4.classList.remove("box-radio")
+               
+            }else if (somb==2) {
+                boxSecond1.classList.remove("box-radio")
+                boxSecond2.classList.remove("box-radio")
+                boxSecond3.classList.add("box-radio")
+                boxSecond4.classList.remove("box-radio")
+               
+            }else if (somb==3) {
+                boxSecond1.classList.remove("box-radio")
+                boxSecond2.classList.remove("box-radio")
+                boxSecond3.classList.remove("box-radio")
+                boxSecond4.classList.add("box-radio")
+               
+            } else{
+                boxSecond1.classList.add("box-radio")
+                boxSecond2.classList.remove("box-radio")
+                boxSecond3.classList.remove("box-radio")
+                boxSecond4.classList.remove("box-radio")
+                somb=0
+                
+            }   
+        }
+       
+       
+    })  
+    
+}
+document.addEventListener("DOMContentLoaded",()=>{
+    let contenedor= document.querySelector('.lighbox')
+
+    carrusel(contenedor)
+})
+
 
 
 let imgMainLigh=document.getElementById("imgMainLigh")
-let btnAdelante=document.getElementById("btnAdelante")
-let btnAtras=document.getElementById("btnAtras")
+let btnAdelante=document.getElementById("btnadelante")
+let btnAtras=document.getElementById("btnatras")
 let imgSecundary=document.getElementById("imgSecundary")
 let imgSecundaryOne=document.getElementById("imgSecundary-one")
 let imgSecundaryTwo=document.getElementById("imgSecundary-two")
@@ -157,53 +269,40 @@ let boxSecond1=document.getElementById("boxImgSecond1")
 let boxSecond2=document.getElementById("boxImgSecond2")
 let boxSecond3=document.getElementById("boxImgSecond3")
 let boxSecond4=document.getElementById("boxImgSecond4")
+let imgMainLighInner=document.getElementById("imgMainLigh").innerHTML
 boxSecond1.addEventListener("click",function () {
     imgMainLigh.setAttribute("src","img/image-product-1.jpg");
-    console.log("1")  
-    imgSecundaryOne.classList.add("box-radio")
-    imgSecundaryTwo.classList.remove("box-radio")
-    imgSecundaryThree.classList.remove("box-radio")
-    imgSecundaryFour.classList.remove("box-radio")
-    imgSecundaryOne.classList.add("img-opaca")
-    imgSecundaryTwo.classList.remove("img-opaca")
-    imgSecundaryThree.classList.remove("img-opaca")
-    imgSecundaryFour.classList.remove("img-opaca") 
+    boxSecond1.classList.add("box-radio")
+    boxSecond2.classList.remove("box-radio")
+    boxSecond3.classList.remove("box-radio")
+    boxSecond4.classList.remove("box-radio")
+    
+    
 })
 boxSecond2.addEventListener("click",function () {
     imgMainLigh.setAttribute("src","img/image-product-2(1).jpg")
-    console.log("2")
-    imgSecundaryOne.classList.remove("box-radio")
-    imgSecundaryTwo.classList.add("box-radio")
-    imgSecundaryThree.classList.remove("box-radio")
-    imgSecundaryFour.classList.remove("box-radio")
-    imgSecundaryOne.classList.remove("img-opaca")
-    imgSecundaryTwo.classList.add("img-opaca")
-    imgSecundaryThree.classList.remove("img-opaca")
-    imgSecundaryFour.classList.remove("img-opaca") 
+    boxSecond1.classList.remove("box-radio")
+    boxSecond2.classList.add("box-radio")
+    boxSecond3.classList.remove("box-radio")
+    boxSecond4.classList.remove("box-radio")
+    
 })
 boxSecond3.addEventListener("click",function () {
     imgMainLigh.setAttribute("src","img/image-product-3.jpg");  
-    console.log("3")
-    imgSecundaryOne.classList.remove("box-radio")
-    imgSecundaryTwo.classList.remove("box-radio")
-    imgSecundaryThree.classList.add("box-radio")
-    imgSecundaryFour.classList.remove("box-radio")
-    imgSecundaryOne.classList.remove("img-opaca")
-    imgSecundaryTwo.classList.remove("img-opaca")
-    imgSecundaryThree.classList.add("img-opaca")
-    imgSecundaryFour.classList.remove("img-opaca") 
+    boxSecond1.classList.remove("box-radio")
+    boxSecond2.classList.remove("box-radio")
+    boxSecond3.classList.add("box-radio")
+    boxSecond4.classList.remove("box-radio")
+    
     
     })
 boxSecond4.addEventListener("click",function(){
     imgMainLigh.setAttribute("src","img/image-product-4.jpg");
-    console.log("4")
-    imgSecundaryOne.classList.remove("box-radio")
-    imgSecundaryTwo.classList.remove("box-radio")
-    imgSecundaryThree.classList.remove("box-radio")
-    imgSecundaryFour.classList.add("box-radio")
-    imgSecundaryOne.classList.remove("img-opaca")
-    imgSecundaryTwo.classList.remove("img-opaca")
-    imgSecundaryThree.classList.remove("img-opaca")
-    imgSecundaryFour.classList.add("img-opaca") 
+    boxSecond1.classList.remove("box-radio")
+    boxSecond2.classList.remove("box-radio")
+    boxSecond3.classList.remove("box-radio")
+    boxSecond4.classList.add("box-radio")
     
-})
+}) 
+
+

@@ -259,7 +259,7 @@ h2 {
     right: 0;
     left: 85%;
     border: solid 2px black;
-    background-color: #f07313;
+    background-color: #f07313;  
     border-radius: 100%;
     margin-bottom: 1px;
     visibility: hidden;
@@ -380,19 +380,31 @@ h2 {
 } 
 
 .box-img-activo {
+    position: relative;
+    top: -12%;
+   
     display: grid;
     width: 100%;
-    grid-template: " img-main          img-main      img-main            img-main   img-main           img-main   img-main       " 370px 
-                    "empty-0           empty-0       empty-0             empty-0    empty-0            empty-0    empty-0        " 1px  
-                    "img-secundary-1   empty-1       img-secundary-2     empty-2    img-secundary-3    empty-3    img-secundary-4 "20px /
+    grid-template: "img-secundary-1   empty-1       img-secundary-2     empty-2    img-secundary-3    empty-3    img-secundary-4 "20px /
                     98px               20px          98px                20px       98px               20px       97px;
 }
+
 .box-radio {
-    
+    width: 102%;
+    height: 100px;
     border: 2px solid rgb(255, 125, 26);
     border-radius: 15px;
 }
-
+.box-radio::before{
+    content: '';
+    background: white;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 1;
+    opacity: 0.6;
+    border-radius: 15px;
+}
 .img-opaca {
     z-index: 6;
     opacity: 0.4;
