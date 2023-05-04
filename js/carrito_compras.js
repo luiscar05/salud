@@ -22,51 +22,36 @@ imgPrincipal.addEventListener("click",function () {
 
 imgMini1.addEventListener("click",function () {
     imgPrincipal.setAttribute("src","img/image-product-1.jpg"); 
-    imgMainLigh.setAttribute("src","img/image-product-1.jpg")
-    BoxMini1.classList.add("box-img-mini")
-    BoxMini2.classList.remove("box-img-mini")
-    BoxMini3.classList.remove("box-img-mini")
-    BoxMini4.classList.remove("box-img-mini")
-    BoxMini1.classList.add("img-mini-activo")
-    BoxMini2.classList.remove("img-mini-activo")
-    BoxMini3.classList.remove("img-mini-activo")
-    BoxMini4.classList.remove("img-mini-activo")
+    BoxMini1.classList.add("box-radio")
+    BoxMini2.classList.remove("box-radio")
+    BoxMini3.classList.remove("box-radio")
+    BoxMini4.classList.remove("box-radio")
 })
 imgMini2.addEventListener("click",function () {
     imgPrincipal.setAttribute("src","img/image-product-2(1).jpg"); 
-    imgMainLigh.setAttribute("src","img/image-product-2(1).jpg")
-    BoxMini1.classList.remove("box-img-mini")
-    BoxMini2.classList.add("box-img-mini")
-    BoxMini3.classList.remove("box-img-mini")
-    BoxMini4.classList.remove("box-img-mini") 
-    BoxMini1.classList.remove("img-mini-activo")
-    BoxMini2.classList.add("img-mini-activo")
-    BoxMini3.classList.remove("img-mini-activo")
-    BoxMini4.classList.remove("img-mini-activo")
+    BoxMini1.classList.remove("box-radio")
+    BoxMini2.classList.add("box-radio")
+    BoxMini3.classList.remove("box-radio")
+    BoxMini4.classList.remove("box-radio") 
 })
 imgMini3.addEventListener("click",function () {
-    imgPrincipal.setAttribute("src","img/image-product-3.jpg");
-    imgMainLigh.setAttribute("src","img/image-product-3.jpg")  
-    BoxMini1.classList.remove("box-img-mini")
-    BoxMini2.classList.remove("box-img-mini")
-    BoxMini3.classList.add("box-img-mini")
-    BoxMini4.classList.remove("box-img-mini")
-    BoxMini1.classList.remove("img-mini-activo")
-    BoxMini2.classList.remove("img-mini-activo")
-    BoxMini3.classList.add("img-mini-activo")
-    BoxMini4.classList.remove("img-mini-activo")
+    imgPrincipal.setAttribute("src","img/image-product-3.jpg");  
+    BoxMini1.classList.remove("box-radio")
+    BoxMini2.classList.remove("box-radio")
+    BoxMini3.classList.add("box-radio")
+    BoxMini4.classList.remove("box-radio")
+   
 })
 imgMini4.addEventListener("click",function () {
     imgPrincipal.setAttribute("src","img/image-product-4.jpg");
-    imgMainLigh.setAttribute("src","img/image-product-4.jpg")
-    BoxMini1.classList.remove("box-img-mini")
-    BoxMini2.classList.remove("box-img-mini")
-    BoxMini3.classList.remove("box-img-mini")
-    BoxMini4.classList.add("box-img-mini")
-    BoxMini1.classList.remove("img-mini-activo")
+    BoxMini1.classList.remove("box-radio")
+    BoxMini2.classList.remove("box-radio")
+    BoxMini3.classList.remove("box-radio")
+    BoxMini4.classList.add("box-radio")
+    /* BoxMini1.classList.remove("img-mini-activo")
     BoxMini2.classList.remove("img-mini-activo")
     BoxMini3.classList.remove("img-mini-activo")
-    BoxMini4.classList.add("img-mini-activo")
+    BoxMini4.classList.add("img-mini-activo") */
 })
 
 
@@ -80,6 +65,7 @@ let CostoProducto=document.getElementById("costoPro")
 
 let ConfirCompra=document.getElementById("ConfirCompra")
 let ProductAdd = document.getElementById("Product-add") 
+contador=0;
 btnRestar.addEventListener("click",function(){
     
     let numElementosTxt=document.getElementById("numeroElement").innerHTML
@@ -91,14 +77,23 @@ btnRestar.addEventListener("click",function(){
         let totalElementosInt=elemntInt-1
         let totalElementosTxt=totalElementosInt.toString()
         numElementos.innerHTML=totalElementosTxt 
-
+        ProductAdd.innerHTML=totalElementosTxt
+        
         let CostoProductoInt= parseInt(CostoProductoTxt)
         let TotalProductoInt= 85000*totalElementosInt
         let totalProductoTxt=TotalProductoInt.toString()
         totalProductoTxt="$"+ new Intl.NumberFormat().format(totalProductoTxt)
         CostoProducto.innerHTML=totalProductoTxt
-    }
 
+
+        
+        
+        
+    }
+    // let productRes=parseInt(totalElementosTxt)
+    //     let totalProRes=productRes-1
+    //     let TotalProducto=totalProRes.toString()
+    //     ProductAdd.innerHTML=TotalProducto
     
    
 })
@@ -121,34 +116,29 @@ btnSumar.addEventListener("click",function(){
         CostoProducto.innerHTML=totalProductoTxt
 
     }
-    
-    ProductAdd.innerHTML=totalElementosTxt 
-   
-        
+
+    ProductAdd.innerHTML=totalElementosTxt
+    btnRestar.addEventListener("click",function () {
+        let productRes=parseInt(totalElementosTxt)
+        let totalProRes=productRes-1
+        let TotalProducto=totalProRes.toString()
+        ProductAdd.innerHTML=TotalProducto
+    })      
 })
 
 
 ConfirCompra.addEventListener("click",function(){
     alert ("Producto Agregado Al Carrito")
     ProductAdd.classList.remove("product-add")
-    ProductAdd.classList.add("product-add-activo")
-    btnSumar.addEventListener("click",function () {
-        totalElementosTxt++
-        console(totalElementosTxt)
-    })
-    btnRestar.addEventListener("click",function () {
-        totalElementosTxt--
-        console(totalElementosTxt)
-    })
-    
+    ProductAdd.classList.add("product-add-activo")  
 })
 let imagenes=['img/image-product-1.jpg','img/image-product-2(1).jpg','img/image-product-3.jpg','img/image-product-4.jpg']
 let cont=0
 let somb=0
 function carrusel( contenedor ) {
     contenedor.addEventListener("click",e =>{
-        let atras=contenedor.querySelector('.btn-atras'),
-         adelante=contenedor.querySelector('.btn-adelante'),
+        let atras=contenedor.querySelector('.atras'),
+         adelante=contenedor.querySelector('.adelante'),
          img =contenedor.querySelector('.img-main-ligh'),
          tgt =e.target;
         
@@ -203,11 +193,11 @@ function carrusel( contenedor ) {
             if (cont < imagenes.length-1) {
                 img.src=imagenes[cont+1]
                 cont++
-                console.log ("bien")
+                
             } else {
                img.src=imagenes[0] 
                cont=0
-               console.log ("bien")
+               
             }
             somb++
             if (somb==0) {
@@ -293,9 +283,8 @@ boxSecond3.addEventListener("click",function () {
     boxSecond2.classList.remove("box-radio")
     boxSecond3.classList.add("box-radio")
     boxSecond4.classList.remove("box-radio")
-    
-    
-    })
+   
+})
 boxSecond4.addEventListener("click",function(){
     imgMainLigh.setAttribute("src","img/image-product-4.jpg");
     boxSecond1.classList.remove("box-radio")
@@ -304,5 +293,3 @@ boxSecond4.addEventListener("click",function(){
     boxSecond4.classList.add("box-radio")
     
 }) 
-
-
