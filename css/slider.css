@@ -1,27 +1,32 @@
 *{
     margin: 0;
     padding: 0;
+    /* overflow: auto; */
 }
 
 .main-content{
-    
     display: grid;
     grid-template:  "empty-left  main-nav     empty-right"
                     "empty-left  img-paisaje  empty-right"
                     "empty-left  iconos       empty-right"/
-                     1fr         1439px       1fr ;
-    overflow: auto;
-}
+                     1fr         1440px       1fr ;
+    
+} 
 .empty-left{
     grid-area: empty-left;
     background-color: rgb(223,210,225);
+    height: 100vh;
+    z-index: 3;
 }
 .empty-right{
     grid-area: empty-right;
     background-color: rgb(223,210,225);
+    height: 100vh;
+    z-index: 3;
 }
 .logo-box{
     float: left;
+    height: 60px;
 }
 .img-logo{
     height: 40px;
@@ -52,18 +57,75 @@
     padding: 15px 25px 0 25px;
 }
 .paisaje-1{
-    position: relative;
-    top: -125px;
-    width: 1439px;
+    position: fixed;
+    /* position: fixed; */
+    top: 60px;
+    width: 1440px;
     grid-area: img-paisaje;
     z-index: 1;
-    left: 0;
-    overflow: hidden;
+    left: 12.5%;
+    overflow: none;
+    transition: left 2s;
 }
 .paisaje-1-hidden{
-    position: relative;
-    top: -125px;
-    width: 1439px;
+    position: fixed;
+    top: 60px;
+    width: 1440px;
+    grid-area: img-paisaje;
+    z-index: 1;
+    left: -100%;
+    transition: left 2s;
+}
+.paisaje-2{  
+    position: fixed;
+    top: 60px;
+    width: 1440px;
+    grid-area: img-paisaje;
+    z-index: 1;
+    left: 12.5%;
+    transition: left 2s;
+}
+.paisaje-2-hidden{    
+    position: fixed;
+    top: 60px;
+    width: 1440px;
+    grid-area: img-paisaje;
+    z-index: 1;
+    left: 100%;
+    transition: left 2s;
+}
+.paisaje-2-hidden-left{
+    position: fixed;
+    top: 60px;
+    width: 1440px;
+    grid-area: img-paisaje;
+    z-index: 1;
+    left: -100%;
+    transition: left 2s;
+}
+
+.paisaje-3{
+    position: fixed;
+    top: 60px;
+    width: 1440px;
+    grid-area: img-paisaje;
+    z-index: 1;
+    left: 12.5%;
+    transition: left 2s;
+}
+.paisaje-3-hidden{
+    position: fixed;
+    top: 60px;
+    width: 1440px;
+    grid-area: img-paisaje;
+    z-index: 1;
+    left: 100%;
+    transition: left 2s;
+}
+.paisaje-3-hidden-left{
+    position: fixed;
+    top: 60px;
+    width: 1440px;
     grid-area: img-paisaje;
     z-index: 1;
     left: -100%;
@@ -74,22 +136,22 @@
     height: 50px;
 }
 .flecha-adelante{
-    color: black;
+    color: white;
     width: 100px;
     font-size: 120px;
-    position: relative;
-    top: 348px;
+    position: fixed;
+    top: 430px;
     left: 85%;
-    z-index: 2;
+    z-index: 5;
     cursor: pointer;
 } 
 .flecha-atras{
-    color: black;
+    color: white;
     width: 100px;
     font-size: 120px;
-    position: relative;
-    top: 348px;
-    left: 20px;
-    z-index: 2;
+    position: fixed;
+    top: 430px;
+    left: 190px;
+    z-index: 5;
     cursor: pointer;
 }
