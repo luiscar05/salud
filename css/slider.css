@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    /* overflow: auto; */
+    overflow: auto;
 }
 
 .main-content{
@@ -58,7 +58,7 @@
 }
 .paisaje-1{
     position: fixed;
-    /* position: fixed; */
+    position: fixed; 
     top: 60px;
     width: 1440px;
     grid-area: img-paisaje;
@@ -99,7 +99,7 @@
     top: 60px;
     width: 1440px;
     grid-area: img-paisaje;
-    z-index: 1;
+    z-index: 1; 
     left: -100%;
     transition: left 2s;
 }
@@ -154,4 +154,173 @@
     left: 190px;
     z-index: 5;
     cursor: pointer;
+} 
+@media only screen and (max-width:1400px){
+    .main-content{
+        display: grid;
+        grid-template:  "empty-left  main-nav     empty-right"
+                        "empty-left  img-paisaje  empty-right"
+                        "empty-left  iconos       empty-right"/
+                         1fr         1000px       1fr ; 
+        
+    } 
+    .paisaje-1{
+        position: fixed; 
+        top: 60px;
+        width: 1000px;
+        height: 530px;
+        grid-area: img-paisaje;
+        z-index: 1;
+        left: 9.2%;
+        transition: left 2s;
+    }
+    .paisaje-1-hidden{
+        position: fixed;
+        width: 1000px;
+        height: 530px;
+        grid-area: img-paisaje;
+        z-index: 1;
+        left: -100%;
+        transition: all 2s ease-in;
+    }
+    .paisaje-2{
+        position: fixed; 
+        top: 60px;
+        width: 1000px;
+        grid-area: img-paisaje;
+        z-index: 1;
+        left: 9.2%;
+        transition: left 2s;
+    }
+    .paisaje-2-hidden{
+        position: fixed;
+        top: 60px;
+        width: 1000px;
+        grid-area: img-paisaje;
+        z-index: 1;
+        left: 100%;
+        transition: all 2s ease-in;
+    }
+    .paisaje-2-hidden-left{
+        position: fixed;
+        top: 60px;
+        width: 1000px;
+        grid-area: img-paisaje;
+        z-index: 1;
+        left: -100%;
+        transition: all 2s ease-in;
+    }
+    .paisaje-3{
+        position: fixed; 
+        width: 1000px;
+        grid-area: img-paisaje;
+        z-index: 1;
+        left: 9.2%;
+        overflow: none;
+        transition: left 2s;
+    }
+    .paisaje-3-hidden{
+        position: fixed;
+        top: 60px;
+        width: 1000px;
+        grid-area: img-paisaje;
+        z-index: 1;
+        left: 100%;
+        transition: all 2s ease-in;
+    }
+    .paisaje-3-hidden.left{
+        position: fixed;
+        top: 60px;
+        width: 1000px;
+        grid-area: img-paisaje;
+        z-index: 1;
+        left: -200%;
+        transition: all 2s ease-in;
+    }
+   
+    .flecha-adelante{   
+        position: fixed; 
+        font-size: 100px;
+        top: 300px;
+        left: 87%;
+        z-index: 5;
+        cursor: pointer;
+    } 
+    .flecha-atras{  
+        position: fixed; 
+        font-size: 100px;
+        top: 300px;
+        left: 80px;
+        z-index: 5;
+        cursor: pointer;
+    }
+     
+
 }
+   /*  .main-content{
+        margin: auto;
+        width: 90%;
+        max-width: 120em;
+        background-color: lightblue;
+        height: 90vh;
+        border-radius: 3px;
+        box-shadow: 8px 8px 20px 5px grey;
+        
+    }
+    
+    .main-content .box-marco{
+        width: 300%;
+       padding: 2px;
+        background-color: orange;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        transition: all .5s ease;
+        transform: translateX(0%);
+
+    }
+    .main-content .box-marco-izquierda-1{
+        transform: translateX(-33.4%);
+    }
+    .main-content .img{
+        width: calc(100% /3);
+        min-height: 10vh;
+        border: 2px solid black;
+        background-color: green;
+    }
+    .main-content .puntos{
+        position: relative;
+        top: 10%;
+        width: 100%;
+        margin-top: 10%;
+       
+        padding: 1em;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-content .flecha{
+        
+        font-size: 3em;
+        margin: 1em;
+        color: black;
+    }
+    .main-content .flecha.activo{
+        background-color: orange;
+    }
+    .atras{
+        position: relative;
+        left: -42%;
+    }
+    .adelante{
+        position: relative;
+        left: 40%;
+    }
+     */
+
+  
+
+
