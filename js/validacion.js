@@ -4,7 +4,7 @@ let modal=document.getElementById("modal_alert")
 let boton=document.getElementById("regreso")
 
 botonEnviar.addEventListener("click",function(){
-    if(nombreUsuario.value.length===0){
+    if(nombreUsuario.value.length===0 ){
         /* alert("El nombre de usuario es un campo obligatorio") */
         modal.classList.add("modal-alert")
         modal.classList.remove("inactivo")
@@ -14,6 +14,6 @@ botonEnviar.addEventListener("click",function(){
         })
     }
     else{
-        alert("Bienvenido  ")
+        alert("Bienvenido ") 
     }
-   })
+})

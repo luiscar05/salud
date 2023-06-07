@@ -1,22 +1,32 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 body{
-    background-image: url(../img/cafe_fondo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background:linear-gradient(45deg,black,grey,black)
+
    
 }
 
 .div-form{
-    display: block;
-    width: 25%;
-    position: fixed;
-    left: 40%;
-    top: 20%;
+    position: relative;
+    width: 380px;
+    height: 220px;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+
+    
+    
    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.51);
+  /*   background: rgba(255, 255, 255, 0.51);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.5px);
@@ -27,16 +37,59 @@ body{
     -webkit-box-shadow: 21px -14px 56px 0px rgba(97,96,97,1);
     -moz-box-shadow: 21px -14px 56px 0px rgba(97,96,97,1);
     box-shadow: 21px -14px 56px 0px rgba(97,96,97,1);
-    z-index: -2;
+    z-index: -2; */
 }
-form{
+.div-form::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%; 
+    width: 380px;
+    height: 220px;
+    background: linear-gradient(0deg,transparent,#45f3ff,#7dff45);
+    transform-origin:bottom right ;
+    animation: animate 6s linear infinite;  
+}
+.div-form::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 220px;
+    background: linear-gradient(0deg,transparent,#ff4545,#45f3ff);
+    transform-origin:bottom right ;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+   
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.form{
+    position: absolute;
+    inset: 5px;
+    background-color: #28292d;  
+    z-index: 10;
+    border-radius: 8px;
     padding: 20px;
     display: block;
-    text-align: center;       
+    text-align: center;  
+   
 }
-label{
+h2{
     font-family: serif;
     font-size: 1.5em;
+    color: white;
 }
 input{
     padding: 7px;
@@ -99,12 +152,13 @@ button:hover::after{
 }
 .modal-alert{
     background-color: rgba(125, 127, 128, 0.872); 
+    position: absolute;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 6;
+    z-index: 60;
 }
 .box-alert{
     width: 500px;
@@ -117,7 +171,7 @@ button:hover::after{
     background-color: goldenrod;
     position: relative;
     left: 350px;
-    top: 220px;
+    top: 5%; 
     width: 100px;
     height: 50px;
     z-index: 8;
@@ -132,4 +186,9 @@ button:hover::after{
 }
 .inactivo{
    display: none;
+}
+p{
+    font-size: 2em;
+    color: black;
+    padding: 2rem 3rem;
 }
