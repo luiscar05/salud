@@ -50,3 +50,23 @@ console.log("De entero a  string")
 
  let Num6Int= Math.ceil(Num3Float)
  console.log ("Conversion de decimal " + Num3Float+" A entero con ajuste hacia el techo " + Num6Int)
+
+
+ /* Ejercicio 6 */
+
+
+console.log("Operadores aritmeticos")
+let numArit1=8;
+let numArit2=6;
+console.log ("suma de numArit1(8)  y numArit2(6) es "+(numArit1+numArit2))
+console.log ("Resta de numArit2(6)  y numArit1(8) es "+(numArit2-numArit1))
+console.log ("Multiplicacion de numArit1(8)  y numArit2(6) es "+(numArit1*numArit2))
+console.log ("residuo de numArit1(8)  y numArit2(6) es "+(numArit1%numArit2))
+let resulDiv=numArit1/numArit2
+console.log ("division de numArit1(8)  y numArit2(6) es "+(numArit1/numArit2))
+console.log("redondear SEGUN EL PROMEDIO")
+console.log(Math.round(resulDiv))
+console.log("redondear Hacia abajo")
+console.log(Math.floor(resulDiv))
+console.log("redondear hacia arriba")
+console.log(Math.ceil(resulDiv))
