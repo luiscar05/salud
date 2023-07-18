@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/validacion_fecha.css">
     <title>Document</title>
 </head>
 <body>
-    <div>
-    <div>
-        <form method="get">
-            <h2 >FECHA</h2>
-            <input type="date" name="" id="fechas">
-            <h2 >hora</h2>
-            <input type="time" name="" id="horas">
-            <!-- <button id="boton">enviar</button> -->
-            <input type="submit" value="Enviar Submit"id="boton">
-        </form>
-    </div>
+<div class="square">
+    <i style="--clr:#00ff0a"></i>
+    <i style="--clr:#ff0057"></i>
+    <i style="--clr:#fffd44"></i>
+        <div class="validation">
+            <form  method="get">
+                <h2>Fecha</h2>
+                <input type="date" id="fechas">
+                <h2>Hora</h2>
+                <input type="time" id="horas">
+                <button class="boton" id="boton">Enviar</button> 
+            </form>
+        </div>
 </div>
 <script src="./js/validacion_fecha.js"></script>
+</body>
+</html>
+
 </body>
 </html>
 

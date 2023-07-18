@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+    font-family: 'open Sans', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 92vh; 
+    width: 100%;
+    background: #111;
+    /*  */
+}
+.square{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.square i{
+    position: absolute;
+    inset: 0;
+    border: 2px solid #fff;
+    transition: 0.5s;
+}
+.square i:nth-child(1){
+    border-radius: 36% 60% 61% 35% / 39% 42% 54% 57% ;
+    animation: animate 6s linear infinite;
+}
+.square i:nth-child(2){
+    border-radius: 39% 42% 54% 57% / 36% 60% 61% 35% ;
+    animation: animate 6s linear infinite;
+}
+.square i:nth-child(3){
+    border-radius: 39% 42% 54% 57% / 36% 60% 61% 35% ;
+    animation: animate2 6s linear infinite;
+}
+.square:hover i{
+    border: 6px solid var(--clr);
+    filter: drop-shadow(0 0 20px  var(--clr))
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate2{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.validation{
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+form{
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+} 
+input{
+    padding: 4px 10px;
+    border-radius: 40px;
+    font-size: 1.2em;
+    color: rgb(37, 37, 37);
+    width: 100%;
+    /* background: transparent; */
+    box-shadow: none;
+    outline: none;
+} 
+
+.validation h2{
+    font-size: 1.2;
+    color: #fff;
+}
+.boton{
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 40px;
+    font-size: 1.2em;
+    color: #fff;
+   
+    background: linear-gradient(45deg,#ff350a,#fff172);
+    border: none;
+    cursor: pointer;
+}
+.boton:hover{
+    transition: width 0.5s linear;
+    width: 150px;
+   /*  animation: boton 0.5s linear; */
+}
+@keyframes boton {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform:rotateZ(10deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
