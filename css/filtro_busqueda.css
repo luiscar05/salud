@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menu{
+    display: grid;
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 100px;
+    border: none;
+    border-bottom: 0.5px solid rgb(149, 149, 149);
+
+
+}
+nav{
+    width: 100%;
+    height: 100px;
+    
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px; 
+}
+li{
+    display: flex;
+    flex-direction: row;
+    
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(68, 67, 67);
+    font-size: 1.2em;
+    padding: 15px;
+}
+.icono{
+   /*  padding-right: 10px; */
+    padding: 15px 2px;
+    font-size: 1.2em;
+    color:  rgb(68, 67, 67);
+}
+.icono:hover{
+   font-size: 1.3em;
+   cursor: pointer;
+}
+.img-cmr{
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+ /*    padding: 15px 2px; */
+ /*    height: 70px; */
+}
+.img-logo{
+    width: 350px;
+    padding: 10px 50px;
+}
+.div-busqueda{
+    width: 450px;
+    padding: 7px 2px;
+    border-radius: 7px;
+    font-size: 1em;
+    border: 0.5px solid gray ;
+    margin: 20px;
+}
+.lupa{
+    position: absolute;
+    top: 37%;
+    right:43%;
+    font-size: 1.2em; 
+    z-index: 2;
+}
+.lupa:hover{
+    cursor: pointer;
+}
+.img-logo-Jn{
+    display: none;
+}
+
+@media only screen and (max-width:1300px){
+    /* .menu{
+        background-color: brown;
+    } */
+    a{
+        display: none; 
+    }
+    .img-logo{
+        display: none;
+    }
+    .img-logo-Jn{
+        display: flex;
+        width: 190px;
+        padding: 5px 50px;
+    }
+    .lupa{
+        top: 47%;
+        right: 35%;
+    }
+    .icono{
+        margin: 20px;
+        font-size: 1.3em;
+    }
+    .div-busqueda{
+        padding: 7px 3px;
+    }
+}
+@media only screen and (max-width:968px){
+    .menu{
+        background-color: rgb(42, 165, 91);
+    }
+}
+@media only screen and (max-width:600px){
+    .menu{
+        background-color: rgb(165, 42, 122);
+    }
+}
