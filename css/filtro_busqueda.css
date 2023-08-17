@@ -85,8 +85,161 @@ a{
 .Hamburguer{
     display: none;
 }
+.form-ana{
+    position: fixed;
+    width: 406px;
+    right: 20px;
+    height: 100vh;
+    top: 0;
+    display: grid;
+    grid-template:"frm-header" 70px
+                  "frm-body"minmax(150px,80vh)
+                  "frm-input" 60px
+                  "frm-exit"100px/
+                  406px;
+}
+.form-header{
+    grid-area: frm-header;
+    background-color: rgb(0, 114, 206);
+    display: flex;
+    flex-direction: row;
 
+}
+.img-ana-1{
+    width: 60px;
+    height: 65px;
+    margin-top:5px;
+    margin-left: 5px;
+}
+.img-ana-2{
+    width: 100px;
+    height: 95px;
+    /* margin-top:5px;
+    margin-left: 5px; */
+}
+.title-form{
+    font-family: poppins;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-left: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-body{
+    grid-area: frm-body;
+    background-color: rgb(234,238,243);
+    display: grid;
+    grid-template: "empty-left  form-text empty-right"
+                    "empty-left slider    empty-right"/
+                       50px        1fr        40px; 
+}
+.form-text{
+    grid-area: form-text;
+    background-color: darkcyan;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
 
+.form-input{
+    grid-area: frm-input;
+    background-color: rgb(234,238,243);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+    border-top: 2px solid rgb(0, 114, 206);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-text{
+    margin-left: 20px;
+    border: none;
+    background-color: transparent;
+    color: rgb(64,64,64);
+    font-family: poppins,sans-serif;
+    outline: none;
+}
+.icon-smile{
+    margin-right: 30px;
+    font-size: 1.3em;
+}
+.exit-style{
+    background-color: rgb(0, 114, 206);
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.7em;
+    font-family: lato;
+    font-weight: 300;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-exit{
+    grid-area: frm-exit;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text-opciones{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.texto-form-black{
+    font-weight: 900;
+    display: block;
+    padding-top: 30px;
+}
+.rejomj{
+    font-size: .7em;
+    position: relative;
+    bottom: 0;
+    left: 250px;
+}
+.slider{
+    width: 100%;
+    background-color: red;
+    grid-area: slider;
+    font-size: .9em;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.box-slider{
+    background-color: white;
+    width: 250px;
+    height: 120px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.slider-title{
+    font-weight: 900;
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 5px;
+    color: rgb(0,93,173);
+    margin: 10px;
+    letter-spacing: 0.05em;
+    word-spacing: 0.5em;
+}
+.slider-text{
+    font-size: .9em;
+    color:gray;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    display: block;
+    margin-bottom: 5px;
+}
+.click-slider{
+    text-align: center;
+    font-weight: 400;
+
+}
 
 @media only screen and (max-width:1300px){
     *{
