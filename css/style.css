@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color: #727272;
+    background-color: #2b2a2a;
 } 
 .menu_bar{
     display:none; 
@@ -12,39 +12,69 @@ nav{
     background-color: #023859;
     width: 100%;
     height: 7.5vh;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     
 }
 .iconos{
     padding-right: 5px;
 }
-ul{
-    width: 100%;
+.iconos-Prin{
+    font-size: 1.8em;
+    color: white;
+    padding: 10px 20px;
+}
+.iconos-Prin:hover{
+    border: none;
+   border-bottom: 3px solid #4e7288 ;
+}
+.main{
+    width: 50%;
+    height: 7vh;
+    display: flex;
+    justify-content: left;
     list-style: none;
-    text-align: right;
+    text-align: center;
+    
+}
+.servicios{
+    width: 50%;
+    height: 7vh;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    text-align: center;
+    
 }
 li{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     position: relative;
     height: 7vh;
+   /*  background-color: yellow; */
 }
-.logo_mimi{
-    width: 3%;
+/* .logo_mimi{
+    width: 2%;
     border-radius: 12%;
    padding: 5px;
     position: absolute ;
     right: 90%;
     filter: drop-shadow(10px 8px 6px #0a709c);
    
-    
-}
+} */
 nav ul li:hover{
-   /*  background-color: #4e7288; */
    border: none;
-   border-bottom: 5px solid #4e7288 ;
+   border-bottom: 3px solid #4e7288 ;
    
 }
 nav ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     display: block;
     color: white;
     font-size: 1.3em;
@@ -62,6 +92,7 @@ nav ul li:hover .children{
     width: 100%; 
     text-align: left;
 }
+
 nav ul li .children li{
     overflow: hidden;
     display: block;
@@ -70,7 +101,9 @@ nav ul li .children li{
 nav ul li .children li a{
     display: block;
 }
+
 .box-center{
+    
     margin: auto;
     background: var(--color);
     aspect-ratio: 10/16;
@@ -105,7 +138,7 @@ nav ul li .children li a{
 .logo{
     margin: auto;
     margin-top: 20px;
-    width: 90%;
+    width: 50%;
     border-radius: 100px;
     /* background-color: rgb(229, 226, 226); */
     display: flex;
@@ -116,10 +149,10 @@ span{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display:block;
     padding-left:15% ;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     color: rgb(241, 227, 208);
     font-size: 2em;
-    border-right: 4px solid;
+    border-right: 2px solid;
     white-space: nowrap;
     width: 18ch;
     animation: typing 5s steps(25) infinite, blink 0.5s infinite step-end alternate;
@@ -198,4 +231,53 @@ button:hover::after{
         gold 100%
     );
     --fondo: #222;
+}
+.square{
+    
+    z-index: 1;
+    position: relative;
+    width: 440px;
+    height: 420px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 35%;
+}
+.square i{
+    position: absolute;
+    inset: 0;
+    border: 2px solid #fff;
+    transition: 0.5s;
+}
+.square i:nth-child(1){
+    border-radius: 32% 56% 57% 31% / 35% 38% 50% 53% ;
+    animation: animate 6s linear infinite;
+}
+.square i:nth-child(2){
+    border-radius: 35% 38% 50% 53% / 32% 56% 57% 31% ;
+    animation: animate 6s linear infinite;
+}
+.square i:nth-child(3){
+    border-radius: 35% 38% 50% 53% / 32% 56% 57% 31% ;
+    animation: animate2 6s linear infinite;
+}
+.square:hover i{
+    border: 4px solid var(--clr);
+    filter: drop-shadow(0 0 20px  var(--clr))
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate2{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
