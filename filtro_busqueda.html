@@ -34,7 +34,7 @@
             <i class="equis fa-solid fa-x" id="elimanar"></i>
         </ul>
     </div>
-    <div class="form-ana">
+    <div class="form-ana-inactivo" id="form-ana">
         <div class="form-header">
             <img  class="img-ana-1" src="./img/ana.PNG" alt="">
             <span class="title-form">Homecenter</span>
@@ -46,28 +46,28 @@
                     Selecciona una opción 👇
                      <br>
                     <span class="texto-form-black">Para ver mas opciones desliza <br> a la derecha  ➡️</span>
-                    <span class="rejomj">10:05 a.m</span>
+                    <span class="rejomj" id="hora"></span>
                 </div>
             </div> 
             <div class="icons-slider">
                <div class="box-icon-arrow-left"> 
                     <div class="icon-arrow-left"><i class="fa-solid fa-chevron-left"></i></div>
                 </div>
-                <div class="box-main-slider">
-                    <div class="slider">
+                <div class="box-main-slider" id="">
+                    <div class="slider" id="slider">
                         <div class="box-slider slider1"><span class="slider-title">Compra Con un Experto</span> 
                             <span class="slider-text">Compra aqui tus productos o servicios y alquila <br> tus herramientas con un Experto</span>
                           
                             <span class="click-slider">Click aqui</span>
                         </div>
-                        <div class="box-slider slider2">Rastrea Tu Pedido
+                        <div class="box-slider slider2"><span class="slider-title">Rastrea Tu Pedido</span>
                           
                             <span class="slider-text">Rastrea tus Pedidos de Homecenter</span>
                             
-                            <span class="click-compra">Compra aqui</span>
+                            <span class="click-slider">Compra aqui</span>
                         </div>
-                        <div class="box-slider slider3"></div>
-                        <div class="box-slider slider4"></div>
+                        <div class="box-slider slider3">Hola mundo</div>
+                        <div class="box-slider slider4">SIII Funciono</div>
                     </div>
                     
                 </div>
@@ -81,11 +81,12 @@
             <input class="input-text" type="text" name="" id="" placeholder="Escribe aqui" autofocus>
             <span class="icon-smile"><i class="fa-regular fa-face-smile-beam"></i></span>
         </div>
-        <div class="form-exit">
-            <span class="exit-style">X</span>
-        </div>
+       
     </div>
-
+    <div class="form-exit" id="close">
+        
+        <span class="exit-style">Ana</span>
+    </div>
 
     
     <script src="./js/filtro_busqueda.js"></script>

@@ -88,15 +88,19 @@ a{
 .form-ana {
     position: fixed;
     right: 20px;
-    height: 100vh;
+    height: 85vh;
     top: 0;
     width: 406px;
     display: grid;
     grid-template: "frm-header" 70px
                    "frm-body"  minmax(150px, 90vh)
-                   "frm-input" 60px
-                   "frm-exit" 80px/
-                    406px;     
+                   "frm-input" 60px/
+                    406px;   
+    transition:all 5s;  
+}
+.form-ana-inactivo{
+   display: none;
+   transition:all 5s; 
 }
 .form-header{
     grid-area: frm-header;
@@ -129,11 +133,12 @@ a{
 }
 .form-body {
     grid-area: frm-body;
-    background-color: rgb(234,238,243);
+    background-color: rgb(234,238,243); 
     display: grid;
     grid-template: "empty-left      form-text       empty-right"
-                   "icons-slider    icons-slider    icons-slider"  125px /
+                   "icons-slider    icons-slider    icons-slider"  /* 120px */ /
                     50px            1fr              40px;
+  
 }
 .form-text{
     grid-area: form-text;
@@ -160,29 +165,44 @@ a{
     color: rgb(64,64,64);
     font-family: poppins,sans-serif;
     outline: none;
+    position: fixed;
 }
 .icon-smile{
-    margin-right: 30px;
+    
     font-size: 1.3em;
+    position: relative;
+    left: 90%;
 }
 .exit-style{
     background-color: rgb(0, 114, 206);
     color: white;
-    width: 45px;
+    width: 150px;
     height: 45px;
-    border-radius: 50%;
+    border-radius: 7px; 
     font-size: 1.7em;
     font-family: lato;
     font-weight: 300;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+.icon-ana{
+    font-size: 2em;
+    padding: 20px;
+    position: fixed;
+    color:black;
+    left: 85%;
+    bottom: 2%;
 }
 .form-exit{
-    grid-area: frm-exit;
-    display: flex;
-    justify-content: flex-end;
+    /* grid-area: frm-exit;
+    display: flex; */
+    display: block;
+    position: fixed;
+    bottom: 5%;
+    right:2%;
 }
 
 .text-opciones{
@@ -208,18 +228,20 @@ a{
     grid-area: icons-slider;
     display: grid;
     grid-template: "box-icon-arrow-left box-main-slider box-icon-arrow-right" /
-                    50px                310px            50px;
+                    45px                310px            50px;
     position: fixed;
-    right: 15px;
+    bottom: 26%;
+
+    
 }
 .box-main-slider{
     grid-area: box-main-slider;
     width: 320px;
-    height: 15vh;
-    
+    /* height: 21vh; */
     overflow: hidden;
     display: grid;
     grid-area: "icon-arrow-left slider";
+   
 }
 .box-icon-arrow-left {
     grid-area: box-icon-arrow-left;
@@ -269,24 +291,26 @@ a{
    
     grid-area: slider;
     font-size: .9em;
-    height: 123px;
+    height: 120px;
     width: 325px; 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+  /*   margin-top: 10px; */
     /* margin-left: 50px; */
     flex-flow: column wrap;
     /* flex-wrap: wrap; */
     position: relative;   
+    margin-left: -100%;
+    
 }
 .box-slider{
-    margin-bottom: 2px;
+    /* margin-bottom: 2px; */
     background-color: white;
     width: 310px;
     height: 120px;
-    margin-left: 2px;
+    /* margin-left: 2px; */
     margin-right: 20px;
     display: flex;
     flex-direction: column;
