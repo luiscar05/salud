@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(59,70,100);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.box-main{
+  
+    height: 60vh;
+    flex-direction: column;
+    
+}
+input{
+    background-color: rgb(25,31,50);
+    border: none;
+    outline: none;
+    height: 10%;
+    font-size: 2em;
+    color: white;
+    text-align: right;
+}
+.box-butons{
+    margin-top: 10px;
+    background-color: rgb(25,31,50);
+   
+}
+.columnas{
+    color: white;
+}
+.color{
+    background-color:rgb(59,70,100) ;
+}
+.h2,.h1{
+    font-size: 1.5em;
+}

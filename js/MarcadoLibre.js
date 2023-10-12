@@ -11,12 +11,12 @@ class autoMovil {
     }
 }
 let auto1 = new autoMovil("Mazda","TXL",256000000,`./img/Mazda.jpg`,2024,"Pitalto-Huila",0)
+let productos=[auto1]
 let inputBusqueda= document.getElementById("Busquedas");
 let lupa=document.getElementById("lupa")
 inputBusqueda.addEventListener("keydown",(event)=>{
     if (event.key == "Enter") {
         if (inputBusqueda.value="Mazda") {
-
             Producto(auto1);
         }else{
             error()
