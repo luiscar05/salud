@@ -4,8 +4,9 @@
 }
 
     .row{
+        min-width:100%;
         background-color: rgb(255,241,89);
-        padding: 10px 0;
+        padding: 10px 0; 
     }
     li{
         list-style: none;
@@ -41,30 +42,45 @@
         border-radius: 7px 0px 0px 7px;
         padding:0px 5px;
     }
+    label{
+        font-size: 1em;
+        color:rgb(35, 35, 35);
+        word-spacing: 20px;
+    }
     .box-auto{
-        width: 100%;
-        height: 205px;
-        background-color: rgb(226, 221, 221);
+        margin-top: 15px;
+        min-width: 100%;
+        height: auto;
+         /* background-color: rgb(226, 221, 221);  */
         border-bottom: 0.5px solid black;
         display: grid;
-        grid-template: "box-img   box-info"250px /
+        grid-template: "box-img   box-info" /
                         1fr       2fr;
     }
     .box-img{
+        width: 200px;
         grid-area: box-img;
-        
-        height: 200px;
+        border-radius: 7px;
+        padding: 5px 10px;
     }
     .box-info{
         grid-area: box-info;
-        height: 200px;
-       
-    }
-    .precio{
-        font-size: 2em;
-        font-weight: 800;
-        color: white;
         
     }
-
+    .precio{
+        font-size: 1em;
+        font-weight: 800;
+        color: rgb(35, 35, 35);
+        
+    }
+    .colorText{
+        color:rgb(130, 127, 127);
+    }
+    .anio,.lugar,.kilometros{
+        font-size: 0.9em;
+        font-weight: 600;
+        color: rgb(25, 25, 25);
+        padding: 3px;
+    }
+    
 
