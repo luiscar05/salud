@@ -6,78 +6,106 @@
     <title>Calculadora</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css    ">
     <link rel="stylesheet" href="./css/calculator.css">
+    <script async src="js/calculator.js"></script>
 </head>
-<body class="container">
+<body class="container ">
     <div class="box-main d-flex justify-content-center align-items-center p-5" style="height: 100vh; width: 45%;">
-        <input type="text" name="" id="numeros" class="container w-100 rounded" checked >
-        <div class="container mt-4  w-100 rounded text-center box-butons text-white p-4">
+      <div class="w-100 d-flex box-main-opt">
+        <div class="d-flex align-items-center w-50 ">
+          <p class=" dox-text >h2">calc</p>
+        </div>
+        <div class="d-flex  w-50 justify-content-end mr">
+          <div class="text-center  option-1 opcion">
+            1
+            <div id="input1" class="brc style-borde d-flex align-items-center justify-content-center">
+              <div id="hijo1"class="bg-danger rounded-circle w-50 move-right" style="height: 10px;"></div>
+            </div>
+          </div>
+          <div class="text-center  option-2 opcion">
+            2
+            <div  id="input2" class="brc2 style-borde-2 d-flex align-items-center justify-content-center">
+              
+            </div>
+          </div>
+          <div class="text-center  option-3 opcion">
+            3
+            <div id="input3" class="brc3 style-borde-3 d-flex align-items-center justify-content-center">
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+        <input type="text" name="" id="numeros" class="container w-100 rounded p-4" value="0" readonly><!-- #EEEEEE -->
+        <div id="boxNumeros" class="container mt-4  w-100 rounded text-center box-butons text-white p-4"><!-- #D3CDCD -->
             <div class="row columnas">
               <div class="col-3">
-                <button class="btn btn-light btn-block w-100 h2" type="button">7</button>
+                <button class="btn btn-light btn-block w-100 h2" type="button" onclick="addInput('7')">7</button>
               </div>
               <div class="col-3">
-                <button class="btn btn-light btn-block w-100 h2" type="button">8</button>
+                <button class="btn btn-light btn-block w-100 h2" type="button" onclick="addInput('8')" >8</button>
               </div>
               <div class="col-3">
-                <button class="btn  btn-light btn-block w-100 h2" type="button">9</button>
+                <button class="btn  btn-light btn-block w-100 h2" type="button" onclick="addInput('9')">9</button>
               </div>
               <div class="col-3">
-                <button class="btn  color btn-block text-light w-100 h2" type="button">DEL</button>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-                <button class="btn btn-light  btn-block w-100 h2" type="button">4</button>
-              </div>
-              <div class="col-3">
-                <button class="btn btn-light btn-block  w-100 h2" type="button">5</button>
-              </div>
-              <div class="col-3">
-                <button class="btn btn-light btn-block w-100 h2" type="button">6</button>
-              </div>
-              <div class="col-3">
-                <button class="btn btn-light btn-block w-100 h2" type="button">+</button>
+                <button class="btn  color btn-block text-light w-100 h2" type="button" id="EliminarUnvalor">DEL</button>
               </div>
             </div>
             <div class="row">
               <div class="col-3">
-                <button class="btn  btn-light btn-block w-100  h2" type="button">1</button>
+                <button class="btn btn-light  btn-block w-100 h2" type="button" onclick="addInput('4')">4</button>
               </div>
               <div class="col-3">
-                <button class="btn btn-light btn-block w-100 h2" type="button">2</button>
+                <button class="btn btn-light btn-block  w-100 h2" type="button" onclick="addInput('5')">5</button>
               </div>
               <div class="col-3">
-                <button class="btn btn-light btn-block w-100  h2" type="button">3</button>
+                <button class="btn btn-light btn-block w-100 h2" type="button" onclick="addInput('6')">6</button>
               </div>
               <div class="col-3">
-                <button class="btn btn-light btn-block w-100  h2" type="button">-</button>
+                <button class="btn btn-light btn-block w-100 h2" type="button" onclick="addInput('+')">+</button>
               </div>
             </div>
             <div class="row">
               <div class="col-3">
-                <button class="btn btn-light btn-block w-100  h2" type="button">.</button>
+                <button class="btn  btn-light btn-block w-100  h2" type="button"onclick="addInput('1')">1</button>
               </div>
               <div class="col-3">
-                <button class="btn  btn-light btn-block w-100  h2" type="button">0</button>
+                <button class="btn btn-light btn-block w-100 h2" type="button" onclick="addInput('2')">2</button>
               </div>
               <div class="col-3">
-                <button class="btn btn-light btn-block w-100  h2" type="button">/</button>
+                <button class="btn btn-light btn-block w-100  h2" type="button" onclick="addInput('3')">3</button>
               </div>
               <div class="col-3">
-                <button class="btn btn-light btn-block w-100 h2" type="button">X</button>
+                <button class="btn btn-light btn-block w-100  h2" type="button" onclick="addInput('-')">-</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <button class="btn btn-light btn-block w-100  h2" type="button" onclick="addInput('.')">.</button>
+              </div>
+              <div class="col-3">
+                <button class="btn  btn-light btn-block w-100  h2" type="button" onclick="addInput('0')">0</button>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-light btn-block w-100  h2" type="button" onclick="addInput('/')">/</button>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-light btn-block w-100 h2" type="button" onclick="addInput('*')">X</button>
               </div>
             </div>
             <div class="row">
               <div class="col-6">
-                <button class="btn color btn-block w-100 text-light h2" type="button">RESET</button>
+                <button class="btn color btn-block w-100 text-light h2" type="button" id="limpiar">RESET</button>
               </div>
               <div class="col-6">
-                <button class="btn btn-danger btn-block w-100 text-light h1" type="button">=</button>
+                <button class="btn btn-danger btn-block w-100 text-light h1" type="button" id="igual">=</button>
               </div>
             </div>
           </div>
           
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
