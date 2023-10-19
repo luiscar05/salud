@@ -22,6 +22,9 @@ igual.addEventListener("click",()=>{
         if (pantalla.value == "undefined") {
         pantalla.value= "0"
             
+        }   
+        if (pantalla.value == "Infinity") {
+            pantalla.value= "undefined"  
         }
     } catch (error) {
         pantalla.value= "0"
