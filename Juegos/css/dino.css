@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.box-fondo{
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/descierto.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   background-size: 100%; 
+}
+.img-dino{
+    width: 20%;
+   position: absolute;
+   bottom:5% ;
+   z-index: 90;
+  
+}
+.right-movemen{
+    animation: recto 2s infinite;
+}
+@keyframes recto {
+    0%{
+        transform: rotateX('50%');
+    }
+    100%{
+        transform: rotateX('100%');
+    }
+}
