@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dino</title>
+    <title>Dino Game</title>
     <link rel="stylesheet" href="./css/dino.css">
 </head>
 <body>
-    <div class="box-fondo"></div>
+
+    <button onclick="moveBackground()"> Iniciar</button>
+    <div class="game-container">
+        <div class="background"></div>
+        <div class="dino"></div>
+        <div class="dino2"></div>
+        <div class="ground"></div>
+        <div class="game-over">Game Over</div>
+    </div>
     
-    <img src="./img/dino2.0.png" alt="dino" class="img-dino">
     <script src="./js/dino.js"></script>
 </body>
 </html>

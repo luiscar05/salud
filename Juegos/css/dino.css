@@ -1,30 +1,74 @@
-*{
-    padding: 0;
+body {
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
 }
-.box-fondo{
-    min-width: 100%;
-    min-height: 100vh;
-    background-image: url(../img/descierto.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-   background-size: 100%; 
+
+.game-container {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    overflow: hidden;
 }
-.img-dino{
-    width: 20%;
-   position: absolute;
-   bottom:5% ;
-   z-index: 90;
-  
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/descierto.jpg'); /* Añade la ruta de tu imagen de fondo aquí */
+    background-repeat: repeat-x;
+    background-position: 0 0;
 }
-.right-movemen{
-    animation: recto 2s infinite;
+
+.dino {
+    position: absolute;
+    bottom: 0;
+    top: 85px;
+    left: 50px;
+    width: 100%;
+
+    height: 98px;    
+   background-image: url('../img/dino13.gif');
+   background-repeat: no-repeat;
 }
-@keyframes recto {
-    0%{
-        transform: rotateX('50%');
+.dino2{
+    position: absolute;
+    bottom: 0;
+    top: 85px;
+    left: 50px;
+    width: 100%;
+
+    height: 98px;    
+   background-image: url('../img/dinoStop2.0.png');
+   background-repeat: no-repeat;
+}
+
+.ground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #795548;
+}
+
+.jumping {
+    animation: salto 1s;
+}
+
+@keyframes salto {
+    0% {
+        top: 85px;
     }
-    100%{
-        transform: rotateX('100%');
+    50% {
+        top: 20px;
+        left: 60px;
     }
 }
