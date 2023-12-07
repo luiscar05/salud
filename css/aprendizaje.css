@@ -6,7 +6,6 @@
 body{
     background-color:  #505051;
     font-family: sans-serif;
-    
 }
 .menu{
     position: absolute;
@@ -136,8 +135,8 @@ p{
     margin-left: -10px;
     margin-right: 20px;
     font-weight: bold;
-   font-size: 1.5em;
-   font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    font-family: 'Dancing Script', cursive;
     font-family: 'EB Garamond', serif;
     letter-spacing: 2px;
 }

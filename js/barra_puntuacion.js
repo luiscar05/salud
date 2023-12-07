@@ -33,24 +33,23 @@ function generarGrafico(porcentajes){
     let graficos=document.querySelectorAll('.barras')
    /*  let boxGraficos=document.querySelectorAll('.boxBarra') */
    let porcentaje=document.querySelectorAll('.porcentaje') 
-    for (let i = 0; i < graficos.length; i++) {
-        graficos[i].innerHTML="";
-        let grafico=document.createElement("div");
-        grafico.style.background=colores[i];
-        grafico.style.width=porcentajes[i]+"%";
-        grafico.style.height="40px";
-        grafico.style.borderRadius='7px';
-        porcentaje[i].innerHTML=porcentajes[i]+"%";
-        porcentaje[i].style.color="white"
-        graficos[i].appendChild(grafico);
+   for (let i = 0; i < graficos.length; i++) {
+    graficos[i].innerHTML = "";
+    let grafico = document.createElement("div");
+    grafico.style.background = colores[i];
+    grafico.style.width = '0'; // Comenzar con un ancho de 0 para la transición
+    grafico.style.height = "40px";
+    grafico.style.borderRadius = '7px';
+    porcentaje[i].innerHTML = porcentajes[i] + "%";
+    porcentaje[i].style.color = "white";
+    graficos[i].appendChild(grafico);
 
-        /* for (let e = 0; e < boxGraficos.length; e++) {
-            
-          let puntaje = document.createElement("span")
-          puntaje.innerHTML=porcentajes[i]+"%";
-          boxGraficos[e].appendChild(puntaje) 
-       } */
-    }
+    // Agregar una pequeña demora antes de aplicar el ancho final
+    setTimeout(() => {
+        grafico.style.width = porcentajes[i] + "%";
+        grafico.style.transition='width 1s';
+    }, 100); // Puedes ajustar el tiempo según sea necesario
+}
 }
 
 

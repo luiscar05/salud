@@ -7,73 +7,69 @@
     <link rel="stylesheet" href="css/barra_progreso.css">
 </head>
 <body>
-    <h1 id="titulo">Barra de puntuación</h1>
-    <div class="square">
-        <i style="--clr:#00ff0a"></i>
-        <i style="--clr:#ff0057"></i>
-        <i style="--clr:#fffd44"></i>
-            <div class="validation">
-                <form action="">
-                    <label for="">1</label>
-                    <input type="number" name="" id="one" placeholder="Ingrese un numero"required> 
-                    <br>
-                    <label for="">2</label>
-                    <input type="number" name="" id="two" placeholder="Ingrese un numero" required>
-                    <br>
-                    <label for="">3</label>
-                    <input type="number" name="" id="three" placeholder="Ingrese un numero" required>
-                    <br>
-                    <label for="">4</label>
-                    <input type="number" name="" id="four" placeholder="Ingrese un numero"required>
-                    <br>
-                    <label for="">5</label>
-                    <input type="number" name="" id="five" placeholder="Ingrese un numero"required>
+    <div class="boxCalificacion">
+        <div class="square">
+            <i style="--clr:#00ff0a"></i>
+            <i style="--clr:#ff0057"></i>
+            <i style="--clr:#fffd44"></i>
+                <div class="validation">
+                    <form action="">
+                        <label for="">1</label>
+                        <input type="number" name="" id="one" placeholder="Ingrese un numero"required> 
+                        <br>
+                        <label for="">2</label>
+                        <input type="number" name="" id="two" placeholder="Ingrese un numero" required>
+                        <br>
+                        <label for="">3</label>
+                        <input type="number" name="" id="three" placeholder="Ingrese un numero" required>
+                        <br>
+                        <label for="">4</label>
+                        <input type="number" name="" id="four" placeholder="Ingrese un numero"required>
+                        <br>
+                        <label for="">5</label>
+                        <input type="number" name="" id="five" placeholder="Ingrese un numero"required>
+                       
+                    </form>
+                    <button id="button" type="submit" class="button" >Generar barra</button>
+                </div>
+        </div>
+        <div id="graficos">
+            <div class="boxBarra">
+                <div class="barras" id="barras">
                    
-                </form>
-                <button id="button" type="submit" class="button" >Generar barra</button>
+                </div>
+                <span class="porcentaje"></span>
             </div>
+            <div class="boxBarra">
+                <div class="barras">
+    
+                </div>
+                <span class="porcentaje"></span>
+            </div>
+            <div class="boxBarra">
+                <div class="barras">
+    
+                </div>
+                <span class="porcentaje"></span>
+            </div>
+            <div class="boxBarra">
+                <div class="barras">
+    
+                </div>
+                <span class="porcentaje"></span>
+            </div>
+            <div class="boxBarra">
+                <div class="barras">
+    
+                </div>
+                <span class="porcentaje"></span>
+            </div>
+           
+            
+            
+        </div>
     </div>
-        
-        
-   
-
-
-
-    <div id="graficos">
-        <div class="boxBarra">
-            <div class="barras" id="barras">
-               
-            </div>
-            <span class="porcentaje"></span>
-        </div>
-        <div class="boxBarra">
-            <div class="barras">
-
-            </div>
-            <span class="porcentaje"></span>
-        </div>
-        <div class="boxBarra">
-            <div class="barras">
-
-            </div>
-            <span class="porcentaje"></span>
-        </div>
-        <div class="boxBarra">
-            <div class="barras">
-
-            </div>
-            <span class="porcentaje"></span>
-        </div>
-        <div class="boxBarra">
-            <div class="barras">
-
-            </div>
-            <span class="porcentaje"></span>
-        </div>
-       
-        
-        
-    </div>
+    
   
     
 </body>
